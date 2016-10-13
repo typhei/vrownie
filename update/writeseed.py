@@ -28,7 +28,7 @@ def main():
         wt.write("@page.number = " + str(k) + "\n")
         wt.write(str1)
         wt.write("@page.url = \"" + v[1] + "\"\n")
-        wt.write("@page.image = \"/images/" + v[2] + "\"\n")
+        wt.write("@page.image = \"" + v[2] + "\"\n")
         wt.write("@page.body = \"" + v[3].encode("utf-8") + "\"\n")
         wt.write("@page.site_name = \"" + v[4].encode("utf-8") + "\"\n")
         wt.write("@page.date = \"" + v[5].encode("utf-8") + "\"\n")
