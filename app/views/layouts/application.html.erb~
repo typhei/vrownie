@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Vrownie - アダルトVRニュース</title>
+	<meta name="description" content="アダルトVRに関する最新ニュースを毎日お届けします。" />
+	<meta name="keywords" content="VR,アダルト,ニュース,18禁,エロ,AV,セックス,エロゲ,美少女,gearVR,oculus rift,ハコスコ,vrownie">
+	<%= csrf_meta_tags %>
+	
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </head>
+    <!--  本文　 -->
+    <body>
+
+	<!--  ヘッダー部分　 -->
+	<header class="navbar">
+	    <div id="logo">
+		<%= link_to image_tag("/logo.png", {:size=>"450x90", :alt=>"logo"}), "/top" %>
+	    </div>
+	    <div id="snswrapper">
+		<div class="snslogo">
+		    <%= image_tag("/twitterlogo.png", {:size=>"35x35", :alt=>"twitlogo"})%>
+		</div>
+		<div class="snslogo">
+		    <%= image_tag("/fblogo.png", {:size=>"35x35", :alt=>"twitlogo"})%>
+		</div>
+		<div class="snslogo">
+		    <%= image_tag("/googlelogo.jpeg", {:size=>"35x35", :alt=>"twitlogo"})%>
+		</div>
+	    </div>
+	    <!--
+		 <div class="menu">
+		 <div class="menu-box">
+		 <div class="menulink">
+		 <%= link_to "ホーム", "/top", :style=>"text-decoration:none; color:white; font-weight:bold;"%>
+		 </div>
+		 </div>
+		 <div class="menu-box">
+		 <div class="menulink">
+		 <%= link_to "ニュース", "/top", :style=>"text-decoration:none; color:white; font-weight:bold;"%>
+		 </div>
+		 </div>
+		 <div class="menu-box">
+		 <div class="menulink">
+		 <%= link_to "動画", "/video", :style=>"text-decoration:none; color:white; font-weight:bold;"%>
+		 </div>
+		 </div>
+		 <div class="menu-box">
+		 <div class="menulink">
+		 <%= link_to "About", "/about", :style=>"text-decoration:none; color:white; font-weight:bold;"%>
+		 </div>
+		 </div>
+		 <div class="menu-box">
+		 </div>
+		 </div>
+	       -->
+	</header>
+
+
+	<!--  メインコンテンツ　 -->
+	<% if @ad == 1 then %>
+	    <div id="adwrapper-top">
+		<div id="ad-head">
+		    <%= javascript_include_tag "https://adm.shinobi.jp/s/9b26b2475f9cae9f7cf83fbfd350cdf3" %>
+		</div>
+	    </div>
+	<% end %>
+	
+	<div class="container">
+	    <%= yield %>
+	    <div class="clear"></div>
+	</div>
+
+	<% if @ad == 1 then %>
+	    <div id="adwrapper">
+		<div id="ad-foot">
+		    <script src="https://adm.shinobi.jp/s/9b26b2475f9cae9f7cf83fbfd350cdf3"></script>
+		</div>
+	    </div>
+	<% end %>
+	<!--  フッター部分　 -->
+	<footer class="footer">
+	    <div class="small">
+		<div id="links">
+		    <%= link_to "ホーム", "/top", :style=>"text-decoration:none;"%>
+		</div>
+		<div id="links">
+		    <%= link_to "このサイトについて", "/about", :style=>"text-decoration:none;"%>
+		</div>
+		<!-- 
+		     <div id="links">
+		     <%= link_to "お問い合わせ", "/inqury", :style=>"text-decoration:none;"%>
+		     </div>
+		   -->
+	    </div>
+	</footer>
+
+	<script>
+	 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	 
+	 ga('create', 'UA-84323745-1', 'auto');
+	 ga('send', 'pageview');
+	 
+	</script>
+	
+    </body>
+</html>

@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/* 共通レイアウト ================================ */
+/* line 7, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+html {
+  height: 100%;
+}
+
+/* line 11, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  color: #364a5f;
+  background-color: #f8fbf8;
+}
+
+/* line 19, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.container {
+  margin: 55px 0 auto;
+  height: auto;
+  padding-top: 40px;
+  position: relative;
+}
+
+/* ヘッダー ================================ */
+/* line 27, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.navbar {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  top: 0px;
+  z-index: 100;
+  border-bottom: solid;
+  position: absolute;
+  overflow: hidden;
+}
+
+/* line 38, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+#logo {
+  height: 60px;
+  margin: 0 auto;
+  left: 38%;
+  position: relative;
+}
+
+/* フッター ================================ */
+/* line 46, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+footer {
+  height: 70px;
+  border-top: 1px solid #eaeaea;
+  color: white;
+  background-color: rgba(34, 49, 52, 0.9);
+  box-sizing: border-box;
+}
+
+/* line 54, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+footer .small {
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+  top: 20px;
+}
+
+/* line 61, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.small #links {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* 独自 ================================*/
+/* line 67, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.topwrapper {
+  width: 1200px;
+  height: 380px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 74, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.toparticlewrapper {
+  width: 580px;
+  height: 380px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+/* line 82, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.titlelayer {
+  width: 580px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(34, 49, 52, 0.9);
+  opacity: 0.8;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* line 93, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.blockwrapper {
+  width: 1200px;
+  height: 310px;
+  margin: 10px auto;
+}
+
+/* line 100, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+#imagewrapper {
+  width: 390px;
+  height: 300px;
+  float: left;
+  position: relative;
+  overflow: visible;
+}
+
+/* line 108, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.subtitlelayer {
+  width: 390px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(34, 49, 52, 0.9);
+  opacity: 0.8;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* line 120, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.paging {
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* line 126, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.start_number {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin: 0 5px;
+}
+
+/* line 133, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.numbers {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin: 0 5px;
+}
+
+/* line 140, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.numbers:hover {
+  background-color: #d3d3d3;
+}
+
+/* line 144, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+#inner {
+  height: 100%;
+  padding-top: 4px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+/* googleフォーム*/
+/* line 158, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.clear {
+  clear: both;
+  height: 60px;
+}
+
+/* line 163, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.searchform {
+  float: right;
+  margin-top: 15px;
+  position: relative;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

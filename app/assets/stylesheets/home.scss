@@ -1,0 +1,219 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/* 共通レイアウト ================================ */
+
+html {
+   width:100%;
+   height:100%;
+//  min-width:1424px;
+//  min-height:600px;
+}
+
+body {
+  height:100%;
+  width:100%;
+  color: #364a5f;
+  background-color:#faf0e6;
+}
+
+
+/* ヘッダー ================================ */
+.navbar {
+  height:auto;
+  width:100%;
+  background-color:white;
+  z-index:100;
+  position:relative;
+}
+
+#logo-img {
+  height:50px;
+}
+
+#snswrapper{
+  height:35px;
+  position:absolute;
+  bottom:0;
+  right:0;
+  argin-right:15px;
+  margin-bottom:10px;
+}
+
+.snslogo{
+  width:35px;
+  height:35px;
+  margin-right:5px;
+  float:left;
+}
+
+#adwrapper{
+  width:728px;
+  margin:0 auto 10px;
+}
+
+
+.menu{
+  height:60px;
+  background-color:rgba(34, 49, 52, 0.9);
+  bottom:0;
+  position:absolute;
+  padding-left:100px;
+}
+
+.menu-box{
+  height:60px;
+  float:left;
+  position:relative;
+}
+
+.menulink{
+  margin:18px 20px;
+}
+
+/* フッター ================================ */
+footer {
+  width:100%;
+  height:auto;
+  color: black;
+  background-color:white;
+//  box-sizing:border-box;
+  position:relative;
+}
+
+footer .small {
+  width:280px;
+  height:30px;
+  top:0;
+  left:0;
+  right:0;
+  margin:auto;
+  position:absolute;
+}
+
+.small #links{
+  display:inline-block;
+  margin:0 10px;
+}
+
+/* 独自 ================================*/
+//メインコンテンツ
+
+.imagewrapper{
+  width:320px;
+  height:200px;
+  //float:left;
+  //position:relative;
+  //margin:5px 0;
+  //background-color:blue;
+}
+
+.subtitlelayer{
+  width:320px;
+  height:100px;
+  //position:absolute;
+  //background-color:rgba(34, 49, 52, 0.9);
+  background-color:#20b2aa;
+  //bottom:30px;
+//  opacity:0.9;
+}
+
+.subtitle{
+  font-size:22px;
+  font-weight:bold;
+  padding:5px;
+//  line-height:27px;
+}
+
+
+//日付表示
+.datelayer{
+  width:320px;
+  height:30px;
+  font-size:16px;
+  font-weight:bold;
+  background-color:white;
+  color:blue;
+  margin-bottom:20px;
+}
+
+.date{
+  float:left;
+  padding-left:5px;
+}
+
+.sites{
+  float:right;
+  padding-right:5px;
+}
+//ページ遷移部分
+.paging{
+  width:400px;
+  //margin:20px auto 0;
+  background-color:blue;
+}
+
+
+.start_number{
+  width:20px;
+  height:40px;
+  float:left;
+  margin:0 5px;
+}
+
+.numbers{
+  width:20px;
+  height:40px;
+  float:left;
+  margin:0 5px;
+}
+
+.numbers:hover{
+  background-color:#d3d3d3;
+}
+
+#inner{
+  height:100%;
+  padding-top:4px;
+  display:inline-block;
+  text-align:center;
+  vertical-align:middle;
+  //font-size:20px;
+}
+
+
+/* googleフォーム*/
+iframe{
+}
+
+.clear {
+  clear: both;
+  height: 30px;
+}
+
+.searchform{
+  float:right;
+  margin-top:15px;
+  position:relative;
+}
+
+
+/* aboutページ */
+#aboutbox{
+  //width:450px;
+  margin:0 auto;
+  color:#000080;
+}
+
+.abouttitle{
+  font-size:18px;
+  margin-bottom:10px;
+}
+
+.aboutcontents{
+  font-size:14px;
+  margin-bottom:25px;
+}

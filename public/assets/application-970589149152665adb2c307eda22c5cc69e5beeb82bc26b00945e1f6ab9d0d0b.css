@@ -1,0 +1,258 @@
+@charset "UTF-8";
+/* 共通レイアウト ================================ */
+/* line 7, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+html {
+  height: 100%;
+}
+
+/* line 11, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  color: #364a5f;
+  background-color: #dcdcdc;
+}
+
+/* ヘッダー ================================ */
+/* line 21, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.navbar {
+  height: 120px;
+  width: 100%;
+  #background-color: rgba(34, 49, 52, 0.9);
+  background-color: white;
+  top: 0px;
+  z-index: 100;
+  position: absolute;
+  overflow: hidden;
+}
+
+/* line 32, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+#logo {
+  height: 90px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* メインコンテンツ */
+/* line 41, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.container {
+  margin: 110px 0 auto;
+  height: auto;
+  padding-top: 40px;
+  position: relative;
+}
+
+/* フッター ================================ */
+/* line 49, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+footer {
+  width: 100%;
+  height: 70px;
+  color: black;
+  background-color: #f8fbf8;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* line 58, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+footer .small {
+  width: 280px;
+  height: 30px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+}
+
+/* line 69, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.small #links {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* 独自 ================================*/
+/* line 75, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.topwrapper {
+  width: 1200px;
+  height: 410px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 82, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.toparticlewrapper {
+  width: 580px;
+  height: 410px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+/* line 90, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.titlelayer {
+  width: 580px;
+  height: 90px;
+  position: absolute;
+  bottom: 30px;
+  background-color: rgba(34, 49, 52, 0.9);
+  opacity: 0.9;
+}
+
+/* line 99, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+/* line 106, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.topdatelayer {
+  width: 580px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: white;
+  color: blue;
+}
+
+/* line 117, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.topdate {
+  float: left;
+  padding-left: 5px;
+}
+
+/* line 122, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.topsites {
+  float: right;
+  padding-right: 5px;
+}
+
+/* line 127, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.blockwrapper {
+  width: 1200px;
+  height: 330px;
+  margin: 20px auto;
+}
+
+/* line 134, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+#imagewrapper {
+  width: 390px;
+  height: 330px;
+  float: left;
+  position: relative;
+  overflow: visible;
+}
+
+/* line 142, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.subtitlelayer {
+  width: 390px;
+  height: 70px;
+  position: absolute;
+  background-color: rgba(34, 49, 52, 0.9);
+  bottom: 30px;
+  opacity: 0.9;
+}
+
+/* line 151, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.subtitle {
+  font-size: 19px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+/* line 159, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.datelayer {
+  width: 390px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: white;
+  color: blue;
+}
+
+/* line 170, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.date {
+  float: left;
+  padding-left: 5px;
+}
+
+/* line 175, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.sites {
+  float: right;
+  padding-right: 5px;
+}
+
+/* line 180, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.paging {
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* line 186, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.start_number {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin: 0 5px;
+}
+
+/* line 193, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.numbers {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin: 0 5px;
+}
+
+/* line 200, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.numbers:hover {
+  background-color: #d3d3d3;
+}
+
+/* line 204, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+#inner {
+  height: 100%;
+  padding-top: 4px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+/* googleフォーム*/
+/* line 218, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.clear {
+  clear: both;
+  height: 60px;
+}
+
+/* line 223, /Users/admin/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.searchform {
+  float: right;
+  margin-top: 15px;
+  position: relative;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
