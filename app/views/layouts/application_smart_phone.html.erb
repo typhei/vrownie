@@ -14,25 +14,26 @@
 	<!-- end nav -->
 	<div class="container-fruid">
 	    <div class="row-fluid">
-		<header class="navbar" style="height:100px">
-		    <div class="col-lg-4 col-md-4 col-xs-4 col-lg-offset-1 col-md-offset-1 col-xs-offset-1">
-			<div id="logo">
-			    <%= link_to image_tag("/logo.png", {:class=>"img-responsive", :alt=>"logo"}), "/top" %>
+		<div class="col-lg-12">
+		    <header class="navbar" style="height:100px">
+			<div class="col-lg-4 col-md-4 col-xs-4 col-lg-offset-1 col-md-offset-1 col-xs-offset-1">
+			    <div id="logo">
+				<%= link_to image_tag("/logo.png", {:class=>"img-responsive", :alt=>"logo"}), "/top" %>
+			    </div>
 			</div>
-		    </div>
-		    <div id="snswrapper">
-			<div class="snslogo">
-			    <%= image_tag("/twitterlogo.png", {:size=>"35x35", :alt=>"twitlogo"})%>
+			<div id="snswrapper">
+			    <div class="snslogo">
+				<%= image_tag("/twitterlogo.png", {:size=>"35x35", :alt=>"twitlogo"})%>
+			    </div>
+			    <div class="snslogo">
+				<%= image_tag("/fblogo.png", {:size=>"35x35", :alt=>"twitlogo"})%>
+			    </div>
+			    <div class="snslogo">
+				<%= image_tag("/googlelogo.jpeg", {:size=>"35x35", :alt=>"twitlogo"})%>
+			    </div>
 			</div>
-			<div class="snslogo">
-			    <%= image_tag("/fblogo.png", {:size=>"35x35", :alt=>"twitlogo"})%>
-			</div>
-			<div class="snslogo">
-			    <%= image_tag("/googlelogo.jpeg", {:size=>"35x35", :alt=>"twitlogo"})%>
-			</div>
-		    </div>
-		</header>
-	    </div>
+		    </header>
+		</div>
 
 		
 	    <% if @ad == 1 then %>

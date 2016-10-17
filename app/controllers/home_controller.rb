@@ -41,4 +41,5 @@ class HomeController < ApplicationController
   
   def video
   end
+
 end
