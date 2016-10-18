@@ -100,23 +100,25 @@ footer .small {
 }
 
 .subtitlelayer{
-  //width:100%;
-  //height:100px;
-  //position:absolute;
-  //background-color:rgba(34, 49, 52, 0.9);
   background-color:#20b2aa;
   box-shadow:1px 1px 1px;
-  //bottom:30px;
-//  opacity:0.9;
+}
+
+.subtitlelayer-sm{
+  background-color:#20b2aa;
+  height:200px;
+  box-shadow:1px 1px 1px;
 }
 
 .subtitle{
   font-size:22px;
   font-weight:bold;
-  //padding:5px;
-//  line-height:27px;
 }
 
+.subtitle-sm{
+  font-size:36px;
+  font-weight:bold;
+}
 
 //日付表示
 .datelayer{
