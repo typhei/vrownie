@@ -14,7 +14,7 @@
 	<!-- end nav -->
 	<div class="container-fruid">
 	    <div class="row-fluid">
-		<header class="navbar visible-lg visible-md">
+		<header class="navbar">
 		    <!-- pcでのロゴ表示 -->
 		    <div id="logo-lg" class="visible-lg">
 			 <%= link_to image_tag("/logo.png", {:alt=>"logo", :size=>"500x100"}), "/top" %>
@@ -34,8 +34,9 @@
 			<div class="snslogo">
 			    <%= image_tag("/googlelogo.jpeg", {:size=>"35x35", :alt=>"twitlogo"})%>
 			</div>
+		    </div>
 		</header>
-		    
+	    </div>
 		    
 		
 	    <% if @ad == 1 then %>
