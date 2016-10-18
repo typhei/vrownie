@@ -14,9 +14,12 @@
 		<% else %>
 		    <% st1 = arr1.site_name %>
 		<% end %>
-		
-		<div class="imagewrapper">
-		   <%= link_to image_tag(arr1.image, {:border=>"0", :alt=>"image", :style=>"object-fit:fill;"}), arr1.url, :target=>["_blank"]%>
+		<div class="imagewrapper-lg visible-lg visible-md">
+		    <%= link_to image_tag(arr1.image, {:border=>"0", :alt=>"image", :width=>"100%", :height=>"230"}), arr1.url, :target=>["_blank"]%>
+		</div>
+
+		<div class="imagewrapper-sm visible-sm visible-xs">
+		    <%= link_to image_tag(arr1.image, {:border=>"0", :alt=>"image", :width=>"100%", :height=>"300"}), arr1.url, :target=>["_blank"]%>
 		</div>
 		    
 		<div class="subtitlelayer">
@@ -50,9 +53,14 @@
 		    <% st2 = arr2.site_name %>
 		<% end %>
 		
-		<div class="imagewrapper">
-		    <%= link_to image_tag(arr2.image, {:border=>"0",:alt=>"image"}), arr2.url, :target=>["_blank"]%>
+		<div class="imagewrapper-lg visible-lg visible-md">
+		    <%= link_to image_tag(arr2.image, {:border=>"0",:alt=>"image", :width=>"100%",:height=>"230"}), arr2.url, :target=>["_blank"]%>
 		</div>
+
+		<div class="imagewrapper-sm visible-sm visible-xs">
+		    <%= link_to image_tag(arr2.image, {:border=>"0", :alt=>"image", :width=>"100%", :height=>"300"}), arr2.url, :target=>["_blank"]%>
+		</div>
+		
 		<div class="subtitlelayer">
 		    <div class="subtitle">
 			<%= link_to subt2, arr2.url ,:target=>["_blank"],:style=>"color:white; text-decoration:none;" %>
@@ -83,23 +91,28 @@
 		    <% st3 = arr3.site_name %>
 		<% end %>
 		
-		<div class="imagewrapper">
-		    <%= link_to image_tag(arr3.image, {:border=>"0",:alt=>"image"}), arr3.url, :target=>["_blank"]%>
+		<div class="imagewrapper-lg visible-lg visible-md">
+		    <%= link_to image_tag(arr3.image, {:border=>"0",:alt=>"image", :width=>"100%", :height=>"230"}), arr3.url, :target=>["_blank"]%>
 		</div>
-		    <div class="subtitlelayer">
-			<div class="subtitle">
-			    <%= link_to subt3, arr3.url ,:target=>["_blank"],:style=>"color:white; text-decoration:none;" %>
-			</div>
-		    </div>
-		    <div class="datelayer">
-			<div class="date">
-			    <%= arr3.date %>
-			</div>
-			<div class="sites">
-			    <%= st3 %>
-			</div>
-		    </div>
 
+		<div class="imagewrapper-sm visible-sm visible-xs">
+		    <%= link_to image_tag(arr3.image, {:border=>"0", :alt=>"image", :width=>"100%", :height=>"300"}), arr3.url, :target=>["_blank"]%>
+		</div>
+		
+		<div class="subtitlelayer">
+		    <div class="subtitle">
+			<%= link_to subt3, arr3.url ,:target=>["_blank"],:style=>"color:white; text-decoration:none;" %>
+		    </div>
+		</div>
+		<div class="datelayer">
+		    <div class="date">
+			<%= arr3.date %>
+		    </div>
+		    <div class="sites">
+			<%= st3 %>
+		    </div>
+		</div>
+		
 	    <% end %>
 	</div>
 	
@@ -116,23 +129,28 @@
 		    <% st4 = arr4.site_name %>
 		<% end %>
 		
-		<div class="imagewrapper">
-		    <%= link_to image_tag(arr4.image, {:border=>"0", :alt=>"image"}), arr4.url, :target=>["_blank"]%>
+		<div class="imagewrapper-lg visible-lg visible-md">
+		    <%= link_to image_tag(arr4.image, {:border=>"0", :alt=>"image", :width=>"100%",:height=>"230"}), arr4.url, :target=>["_blank"]%>
 		</div>
-		    <div class="subtitlelayer">
-			<div class="subtitle">
-			    <%= link_to subt4, arr4.url ,:target=>["_blank"],:style=>"color:white; text-decoration:none;" %>
-			</div>
-		    </div>
-		    <div class="datelayer">
-			<div class="date">
-			    <%= arr4.date %>
-			</div>
-			<div class="sites">
-			    <%= st4 %>
-			</div>
-		    </div>
 
+		<div class="imagewrapper-sm visible-sm visible-xs">
+		    <%= link_to image_tag(arr4.image, {:border=>"0", :alt=>"image", :width=>"100%", :height=>"300"}), arr4.url, :target=>["_blank"]%>
+		</div>
+		
+		<div class="subtitlelayer">
+		    <div class="subtitle">
+			<%= link_to subt4, arr4.url ,:target=>["_blank"],:style=>"color:white; text-decoration:none;" %>
+		    </div>
+		</div>
+		<div class="datelayer">
+		    <div class="date">
+			<%= arr4.date %>
+		    </div>
+		    <div class="sites">
+			<%= st4 %>
+		    </div>
+		</div>
+		
 	    <% end %>
 	</div>
     </div>
