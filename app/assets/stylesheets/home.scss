@@ -84,12 +84,11 @@ body {
 
 
 /* フッター ================================ */
-footer {
+.footer {
   width:100%;
   height:auto;
   color: black;
   background-color:white;
-//  box-sizing:border-box;
   position:relative;
 }
 
@@ -124,6 +123,8 @@ footer .small {
 }
 
 .subtitlelayer{
+  height:85px;
+  overflow:hidden;
   background-color:#20b2aa;
   box-shadow:1px 1px 1px;
 }
@@ -136,7 +137,7 @@ footer .small {
 }
 
 .subtitle{
-  font-size:22px;
+  font-size:20px;
   font-weight:bold;
 }
 
@@ -148,12 +149,13 @@ footer .small {
 //日付表示
 .datelayer{
   width:auto;
-  height:30px;
+  height:25px;
   font-size:16px;
   font-weight:bold;
   background-color:white;
   margin-bottom:20px;
   box-shadow:1px 1px 1px;
+  overflow:hidden;
 }
 
 .datelayer-sm{
@@ -164,6 +166,7 @@ footer .small {
   background-color:white;
   margin-bottom:50px;
   box-shadow:1px 1px 1px;
+  overflow:hidden;
 }
 
 .date{
@@ -177,23 +180,24 @@ footer .small {
   float:right;
   padding-right:5px;
 }
-//ページ遷移部分
+
+
+/* ページ遷移部分 */
 .paging{
-  width:400px;
-  //margin:20px auto 0;
-  background-color:blue;
+  width:600px;
+  margin:20px auto 0;
 }
 
 
 .start_number{
-  width:20px;
+  width:50px;
   height:40px;
   float:left;
   margin:0 5px;
 }
 
 .numbers{
-  width:20px;
+  width:50px;
   height:40px;
   float:left;
   margin:0 5px;
@@ -203,13 +207,14 @@ footer .small {
   background-color:#d3d3d3;
 }
 
-#inner{
+.inner{
+  width:100%;
   height:100%;
   padding-top:4px;
   display:inline-block;
   text-align:center;
   vertical-align:middle;
-  //font-size:20px;
+  font-size:20px;
 }
 
 

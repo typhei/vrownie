@@ -1,7 +1,7 @@
 <!-- メインコンテンツ　その他の記事 -->
 <% @page.each_slice(4) do |arr1, arr2, arr3, arr4| %>
     <div class="row-fluid">
-	<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
 	    <% if !arr1.nil? then %>
 		
 		<% if arr1.title.length > 39 then %>
@@ -55,7 +55,7 @@
 	    <% end %>
 	</div>
     
-	<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
 	    <% if !arr2.nil? then %>
 		<% if arr2.title.length > 39 then %>
 		    <% subt2 = arr2.title[0,38] + ". . . " %>
@@ -109,7 +109,7 @@
 	    <% end %>
 	</div>
 	
-	<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
 	    <% if !arr3.nil? then %>
 		<% if arr3.title.length > 39 then %>
 		    <% subt3 = arr3.title[0,38] + ". . . " %>
@@ -165,7 +165,7 @@
 	    <% end %>
 	</div>
 	
-	<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
 	    <% if !arr4.nil? then %>
 		<% if arr4.title.length > 39 then %>
 		    <% subt4 = arr4.title[0,38] + ". . . " %>
@@ -227,35 +227,36 @@
     
 <!-- ページ遷移 -->
 <div class="row-fluid">
-    <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-4">
-	<div class="paging">
-	    <% if @start <= 3 || @start.nil? then %>
-		<% paging = [1,2,3,4,5,"...","次へ","最後"] %>
-		<% if @start == 0 then %>
-		    <% @start = 1 %>
-		<% end %>
-	    <% else %>
-		<% paging = ["最初","前へ", @start-2, @start-1, @start, @start+1, @start+2,"次へ","最後"] %>
-	    <% end %>
-	    <% paging.each do |p| %>
-		<% if p == @start then %>
-		    <div class="start_number"><span id="inner"><%= p.to_s %></span></div>
-		<% elsif p == "最初" then %>
-		    <div class="numbers"><span id="inner"><%= link_to "最初", "/top/" %></span></div>
-		<% elsif p == "前へ" then %>
-		    <div class="numbers"><span id="inner"><%= link_to "前へ", "/home/top/"+(@start-1).to_s %></span></div>
-		<% elsif p == "次へ" then %>
-		    <div class="numbers"><span id="inner"><%= link_to "次へ", "/home/top/"+(@start+1).to_s %></span></div>
-		<% elsif p == "最後" then %>
-		    <div class="numbers"><span id="inner"><%= link_to "最後", "/home/top/5" %></span></div>
-		<% elsif p == "..." then %>
-		    <div class="start_number"><span id="inner">...</span></div>
+    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+	<div id ="pagewrapper">
+	    <div class="paging">
+		<% if @start <= 3 || @start.nil? then %>
+		    <% paging = [1,2,3,4,5,"...","次へ","最後"] %>
+		    <% if @start == 0 then %>
+			<% @start = 1 %>
+		    <% end %>
 		<% else %>
-		    <div class="numbers"><span id="inner"><%= link_to p.to_s, "/home/top/"+p.to_s %></span></div>
+		    <% paging = ["最初","前へ", @start-2, @start-1, @start, @start+1, @start+2,"次へ","最後"] %>
 		<% end %>
-	    <% end %>
-	</div>    
+		<% paging.each do |p| %>
+		    <% if p == @start then %>
+			<div class="start_number"><span class="inner"><%= p.to_s %></span></div>
+		    <% elsif p == "最初" then %>
+			<div class="numbers"><span class="inner"><%= link_to "最初", "/top/" %></span></div>
+		    <% elsif p == "前へ" then %>
+			<div class="numbers"><span class="inner"><%= link_to "前へ", "/home/top/"+(@start-1).to_s %></span></div>
+		    <% elsif p == "次へ" then %>
+			<div class="numbers"><span class="inner"><%= link_to "次へ", "/home/top/"+(@start+1).to_s %></span></div>
+		    <% elsif p == "最後" then %>
+			<div class="numbers"><span class="inner"><%= link_to "最後", "/home/top/5" %></span></div>
+		    <% elsif p == "..." then %>
+			<div class="start_number"><span class="inner">...</span></div>
+		    <% else %>
+			<div class="numbers"><span class="inner"><%= link_to p.to_s, "/home/top/"+p.to_s %></span></div>
+		    <% end %>
+		<% end %>
+	    </div>    
+	</div>
     </div>
 </div>
-
     
