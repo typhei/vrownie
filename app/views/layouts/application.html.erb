@@ -16,12 +16,14 @@
 	    <div class="row-fluid">
 		<header class="navbar">
 		    <!-- pcでのロゴ表示 -->
-		    <div id="logo-lg" class="visible-lg">
-			 <%= link_to image_tag("/logo.png", {:alt=>"logo", :size=>"500x100"}), "/top" %>
+		    <span id="desc" class="visible-lg visible-md">18禁アダルトVRまとめサイト</span>
+		    <span id="desc-sm" class="visible-sm visible-xs">18禁アダルトVRまとめサイト</span>
+		    <div id="logo-lg" class="visible-lg visible-md">
+			 <%= link_to image_tag("/logo.png", {:alt=>"logo", :size=>"500x100"}), "/top"%>
 		    </div>
 
 		    <!-- タブレット・スマホでのロゴ表示 -->
-		    <div id="logo-md" class="visible-md visible-sm visible-xs">
+		    <div id="logo-md" class="visible-sm visible-xs">
 			<%= link_to image_tag("/logo.png", {:alt=>"logo", :size=>"600x120"}), "/top" %>
 		    </div>
 		    
