@@ -29,6 +29,7 @@ rake db:seed
 
 #heroku
 cd ..
+rake assets:precompile RAILS_ENV=production
 git add .
 comment="update"
 git commit -m $comment$d
