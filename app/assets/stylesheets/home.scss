@@ -76,9 +76,14 @@ body {
   float:left;
 }
 
-#adwrapper{
+#adwrapper-top{
   width:728px;
-  margin:0 auto 50px;
+  margin:0 auto 30px;
+}
+
+#adwrapper-bottom{
+  width:728px;
+  margin:20px auto 10px;
 }
 
 
@@ -86,25 +91,21 @@ body {
 /* フッター ================================ */
 .footer {
   width:100%;
-  height:auto;
+  height:60px;
   color: black;
   background-color:white;
-  position:relative;
 }
 
-footer .small {
-  width:280px;
-  height:30px;
-  top:0;
-  left:0;
-  right:0;
-  margin:auto;
-  position:absolute;
+.small {
+  width:400px;
+  height:15px;
+  margin-top:20px;
 }
 
-.small #links{
+.links{
+  font-size:16px;
   display:inline-block;
-  margin:0 10px;
+  margin:0 15px;
 }
 
 /* 独自 ================================*/
