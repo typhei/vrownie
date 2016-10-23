@@ -4,7 +4,6 @@ import time
 from bs4 import BeautifulSoup
 import chardet
 import math
-import numpy as np
 #path = "adultVR/app/assets/images/"
 
 
