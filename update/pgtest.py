@@ -2,7 +2,6 @@ import os
 import psycopg2
 import urlparse
 
-
 def main():
     urlparse.uses_netloc.append("postgres")
     url = urlparse.urlparse(os.environ["DATABASE_URL"])
@@ -14,7 +13,7 @@ def main():
         port=url.port)
 
     cur = conn.cursor()
-    db_data = list(cur.execute("SELECT url FROM pages;"))
+    db_data = cur.execute("select * from pages;")
     print db_data
 
 
