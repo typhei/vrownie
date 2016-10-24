@@ -24,7 +24,7 @@ else
     echo "new file"
 fi
 cd ../update
-python scrape.py
+python localscrape.py
 rake db:seed
 
 #heroku
