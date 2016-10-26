@@ -117,7 +117,7 @@ def main():
     cur.execute("SELECT max(number) FROM pages;")
     maxnum = cur.fetchall()[0][0]
     cur.execute("select url from pages;")
-    db_name = [x[0] for x in cur.fetchall()]
+    db_data = [x[0] for x in cur.fetchall()]
     
     
     if maxnum is None:
