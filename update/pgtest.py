@@ -14,7 +14,7 @@ def main():
 
     cur = conn.cursor()
     print cur
-    db_data = cur.execute("select * from pg_database")
+    db_data = cur.execute("select * from pages")
     print db_data
 
 
