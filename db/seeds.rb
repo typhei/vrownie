@@ -1,11 +1,21 @@
 #coding: utf-8
 @page = Page.new
-@page.number = 115
-@page.title = "VRやりながら揉めるおっぱいで、検索検索っ！"
-@page.url = "http://alternagirls.xyz/post-5858/"
-@page.image = "/images/26b8b15dd8461cfd2d6ad38d1d56239d.jpg"
-@page.body = "577:名無しさん＠お腹いっぱい。 2016/10/23 23:55:48 +37IoO2ua.net VRや…"
-@page.site_name = "やっぱりオルタナティブガールズ！ＶＲ！"
+@page.number = 117
+@page.title = "「AIKA（アイカ）に騎乗位で中出し！ヌけるアダルト（エロ）VR動画！！"
+@page.url = "http://protosketch.co/archives/adult_category/adult-festa-vr"
+@page.image = "/images/kmp080-081_1.jpg"
+@page.body = ""
+@page.site_name = "VR通信｜ゲーム、ニュース、レビュー、価格比較はここで！日本最大級のVR(バーチャルリアリティー)情報サイト"
+@page.date = "2016/10/26"
+@page.save
+
+@page = Page.new
+@page.number = 116
+@page.title = "「物を掴める」VRコントローラーが登場 → おっぱいを揉む以外考えられないｗｗｗ：はちま起稿"
+@page.url = "http://blog.esuteru.com/archives/20004254.html"
+@page.image = "/images/d6a93755bc91fa6e01554fd2cdfa8932_tb.jpg"
+@page.body = "「物を掴める」VRコントローラーが登場 → おっぱいを揉む以外考えられないｗｗｗの記事詳細。国内最大のエンタメまとめメディアサイト。ゲーム情報、アニメや漫画、時事ネタなど、たくさんのネタを面白おかしく紹介します。"
+@page.site_name = "はちま起稿"
 @page.date = "2016/10/26"
 @page.save
 
