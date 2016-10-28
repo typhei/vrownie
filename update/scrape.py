@@ -174,15 +174,15 @@ def main():
             
             #データベース書き込み用ファイルにページ情報を書き込む
             str1 = "@page.title = \"" + title.encode("utf-8") + "\""
-            str1 = str1.replace("\n", "")
+            str1 = str1.replace("\n", "").replace("\"", "")
             str1 += "\n"
             urls = url.replace("\n", "")
 
             uparticles[listNum] = {"title":str1,
                                    "url":urls,
                                    "image":image_file,
-                                   "description":description,
-                                   "sitename":site_name,
+                                   "description":description.replace("\"", "").replace("\n", ""),
+                                   "sitename":site_name.replace("\"", ""),
                                    "date":updt}
             
             print url
