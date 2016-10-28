@@ -10,7 +10,7 @@ require "cgi"
 API_KEY = "AIzaSyDWj0oLZ9E3FCz52wuP9ORo1JDTe2T96gw"
 CSE_KEY = "017109665700922583163:vg4jfedf4li"
 QUERIES = ["アダルト", "エロアニメ", "ポルノ", "巨乳", "アダルトビデオ", "セックス", "エロゲ", "美女", "美少女", "オナニー","おっぱい", "エッチ"]
-Number = 0
+Number = 1
 Resnum = 10
 file = File.open("urls", "w")
 uArray = []
@@ -18,7 +18,7 @@ uArray = []
 QUERIES.each do |q|
   
   #クエリ生成
-  query = CGI.escape("\"VR\" " + "\"" + q + "\"");
+  query = CGI.escape("VR" + q);
 
   #検索ワードごとに検索
   for i in 0..Number

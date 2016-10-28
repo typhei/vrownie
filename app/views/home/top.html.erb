@@ -235,6 +235,9 @@
 		    <% if @start == 0 then %>
 			<% @start = 1 %>
 		    <% end %>
+		<% elsif @count < 40 %>
+		    <% paging = ["最初", "前へ", @start-2, @start-1, @start] %>
+		<% end %>
 		<% else %>
 		    <% paging = ["最初","前へ", @start-2, @start-1, @start, @start+1, @start+2,"次へ","最後"] %>
 		<% end %>

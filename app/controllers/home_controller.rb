@@ -3,7 +3,7 @@ class HomeController < ApplicationController
   def top
     @ad = 1
     i = Page.maximum(:number)
-    count = 1
+    @count = 1
     @page = []
     #@toparticle1 = Page.find_by(:number => i)
     #@toparticle2 = Page.find_by(:number => i-1)
@@ -17,8 +17,8 @@ class HomeController < ApplicationController
     while(!(Page.find_by(:number => i).nil?)) do
       @page.push(Page.find_by(:number => i))
       i-=1
-      count += 1
-      if count > 40 then
+      @count += 1
+      if @count > 40 then
         break
       end
     end
