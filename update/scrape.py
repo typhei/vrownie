@@ -12,7 +12,6 @@ import datetime
 path = "../public/images/"
 imagetype = ["png", "gif", "jpg", "jpeg"]
 NUM = 10
-os.environ["DATABASE_URL"]="postgres://vkmornqrrtwcac:o9EHjYYljxJqzIiiyzY2gJ77TZ@ec2-54-235-250-156.compute-1.amazonaws.com:5432/d4nn8u1tlq76j6"
 
 #####画像のダウンロード#####
 def download_img(src,maxsize,current):
