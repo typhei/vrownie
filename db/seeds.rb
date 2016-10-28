@@ -1,41 +1,71 @@
 #coding: utf-8
 @page = Page.new
-@page.number = 121
-@page.title = "【 アダルトVR 】VRエロゲー、動画の世界が革新的過ぎると話題【 PSVR 】 - 奇跡のワイン"
-@page.url = "http://icewine.hatenablog.com/entry/2016/10/27/090837"
-@page.image = "/images/20161027090441.jpg"
-@page.body = "// // Sonyから発売された「 PlayStation VR 」の影響を受け、PSVR以外のVRゲーム市場も活性化しているようです。 その中でも一番の盛り上がりを見せているのがアダルトジャンル「 VRエロゲー 」や「 VR動画 」の世界です。 それ故に2016年が「 VRゲーム元年 」と呼ばれています。 ◆ PlayStation VRとアダルトジャンル PSVRは家庭用ゲーム機なので「レーティング制度」というものがあります。 これに縛られてVRどころか普通のアダルトゲームが発売される可能性はほぼ皆無と予想されます。 ◆ VR普及のカギはアダルトジャンル？ Youtubeなどで公開されて…"
-@page.site_name = "奇跡のワイン"
-@page.date = "2016/10/27"
+@page.number = 128
+@page.title = "【悲報】VRで統合失調症の幻覚疑似体験ｗｗｗｗｗｗｗｗ : ニコニコVIP2ch"
+@page.url = "http://blog.livedoor.jp/nicovip2ch/archives/1973973.html"
+@page.image = "/images/610768ad-s.jpg"
+@page.body = "1:   2016/10/24(月) 22:34:55.46 ID:kwRmrwhy0 BE:837857943-PLT(16930) ポイント特典引用元: ・・・統合失調症の幻覚疑似体験　バーチャルハルシネーションできるよ"
+@page.site_name = "ニコニコVIP2ch"
+@page.date = "2016/10/28"
 @page.save
 
 @page = Page.new
-@page.number = 120
-@page.title = "VRヘッドギアを使いたい理由は最終目的はやはり「エロ」なのではないだろうか。 - 近畿地方から送るゆる～いBLOG"
-@page.url = "http://www.yuruiblog.com/entry/2016/10/26/120000"
-@page.image = "/images/20140319105638.jpg"
-@page.body = "VRヘッドギアって夢があるよね VRヘッドギアが発売されてから色々な話あるけどVRヘッドギアは日本だけで初日に10万台売上があったとか。そんなニュースを見るとちょっと体験はしたくなりますね。 スマートフォンを利用したVRヘッドギアは経験しましたがPS4のグラフィックで楽しめるという事で一回くらいは遊んでみたいです。 私個人的にプレイしたいのは「サマーレッスン」。あのグラフィックでVR楽しめるのであればちょっと楽しみたいです。後はあの女の子に癒やされたい！"
-@page.site_name = "近畿地方から送るゆる～いBLOG"
-@page.date = "2016/10/27"
+@page.number = 127
+@page.title = "【VRカノジョ】変態紳士のリビドーがムンムンこもるVRアダルトゲームを体験。機材トラブルの末に見えたモノは？【アスキーチャンネル デジデジ90】"
+@page.url = "http://news.denfaminicogamer.jp/kikakuthetower/vr_kanojo/6"
+@page.image = "/images/d8c86db6f103f8638b527b46b33612bf.jpg"
+@page.body = "2016年10月18日、アスキー編集部のニコニコ生放送「デジデジ90」にて、“変態紳士集合！最新アダルトVRナイトby全ギ研”が放送された。期待のアダルトVRタイトル『ハニーセレクト』の解説、そして2017年1月発売予定の新作『VRカノジョ』のデモプレイ体験の模様を抜粋してお届けする。アダルトVRについて熱く語るミナミダ＆ハッチに、終始ヒキまくりのつばさちゃんが”HPをガリガリ削られた”という、濃ゆ〜い放送となった。"
+@page.site_name = "電ファミニコゲーマー企画記事"
+@page.date = "2016/10/28"
 @page.save
 
 @page = Page.new
-@page.number = 119
-@page.title = "ハプニング続出も禁断のVR体験に大興奮！「最新アダルトVRナイトby全ギ研」【デジデジ90】"
-@page.url = "http://ascii.jp/limit/group/ida/elem/000/001/252/1252811/"
-@page.image = "/images/001_ogp.jpg"
-@page.body = "10月18日放送のデジデジ90では、“オトナ”の最新VRゲームについて熱く語りました。また、スペシャルゲストに3D美少女アダルトゲームメーカー「イリュージョン」の大鶴尚之さんをお招きし、最新の注目タイトル「VRカノジョ」について、あんなことやこんなことまで解説していただきました。"
-@page.site_name = "ASCII.jp"
-@page.date = "2016/10/27"
+@page.number = 126
+@page.title = "インターネット、二次元、ポケモン、VR、これらもほぼ現実逃避だわな。		日.."
+@page.url = "http://anond.hatelabo.jp/20161026003232"
+@page.image = "/images/og-image-1500.gif"
+@page.body = "インターネット、二次元、ポケモン、VR、これらもほぼ現実逃避だわな。日本経済にマイナスなので全部まとめて犯罪扱いにしてしょっ引けよ。避妊…"
+@page.site_name = "はてな匿名ダイアリー"
+@page.date = "2016/10/28"
 @page.save
 
 @page = Page.new
-@page.number = 118
-@page.title = "仮想空間で生身の人間がバトル！『VR ミッション：25』試写会に5組10名様ご招待　近未来のニューヨークを舞台にしたSFスリラー - AOLニュース"
-@page.url = "http://news.aol.jp/2016/10/20/vr-mission25/"
-@page.image = "/images/vr.jpg"
-@page.body = "近未来のニューヨークを舞台に、仮想空間でのスリリングな戦闘を描くSF作品『VR ミッション：25』が11月19日（土）より池袋HUMAXシネマズ、ヒューマントラストシネマ渋谷ほか全国公開される。この度、本作の試写会に5組10名様をご招待する。   応募方法は簡単。AOL news公式アカウントをフォローして"
-@page.site_name = "AOL News JP"
-@page.date = "2016/10/27"
+@page.number = 125
+@page.title = "ジレットが「史上最高」と誇るT字ひげ剃り、その実力をVR美女と体験してきた"
+@page.url = "http://www.lifehacker.jp/2016/10/161026gillette_vr.html"
+@page.image = "/images/161026gillette_vr_top1-thumb-640x360-100817.jpg"
+@page.body = "ジレットが開発したメンズ用T字カミソリ「ジレット プロシールド」は、従来品が..."
+@page.site_name = "ライフハッカー［日本版］"
+@page.date = "2016/10/28"
+@page.save
+
+@page = Page.new
+@page.number = 124
+@page.title = "ジレットが「史上最高」と誇るT字ひげ剃り、その実力をVR美女と体験してきた - ライブドアニュース"
+@page.url = "http://news.livedoor.com/article/detail/12197067/"
+@page.image = "/images/d41cf_227_584dca1655261510c9c318b7d2124c44.jpg"
+@page.body = "ひげ剃りの3大お悩みに全部応える、技ありの1本です。曰く、ヒリヒリしない、肌荒れしない、カミソリ負けしない。ジレットが開発したメンズ用T字カミソリ「ジレット プロシールド」は、従来品が抱えてきた"ある問題""
+@page.site_name = "ライブドアニュース"
+@page.date = "2016/10/28"
+@page.save
+
+@page = Page.new
+@page.number = 123
+@page.title = "1万円以下でも大満足！ 手持ちのスマホで楽しむ最新VRゴーグル | 日刊SPA!"
+@page.url = "http://nikkan-spa.jp/1220693"
+@page.image = "/images/geek_161011_05.jpg"
+@page.body = "映画『マトリックス』のようなバーチャルリアリティ（仮想現実）が、より手軽に体験可能に！手持ちのスマホと組み合わせて、最新技術のVRコンテンツを堪能しよう！東京ゲームショウ2016でも話題独占。手軽に…"
+@page.site_name = "日刊SPA!"
+@page.date = "2016/10/28"
+@page.save
+
+@page = Page.new
+@page.number = 122
+@page.title = "VRデバイス7製品を一挙展示。VR関連セッションも充実の【CEDEC＋KYUSHU2016】 | VRbeat"
+@page.url = "http://www.vrbeat.net/2651"
+@page.image = "/images/01_640.jpg"
+@page.body = "日本最大のゲーム開発者向け技術カンファレンス【CEDEC（コンピューターエンターテイメントデベロッパーズカンファレンス）】。毎年8月に横浜パシフィコで開催されるイベントで、ここ数年来VR関連のセッションが急増している。一方でCEDECは地方開催も進めており、その一環として10月22日に九州大学大橋キャンパスで【CEDEC＋KYUSHU2016】が開催された。"
+@page.site_name = "VRbeat"
+@page.date = "2016/10/28"
 @page.save
 
