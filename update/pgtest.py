@@ -1,7 +1,7 @@
 import os
 import psycopg2
 import urlparse
-os.environ["DATABASE_URL"]="postgres://vkmornqrrtwcac:o9EHjYYljxJqzIiiyzY2gJ77TZ@ec2-54-235-250-156.compute-1.amazonaws.com:5432/d4nn8u1tlq76j6"
+os.environ["DATABASE_URL"]="postgres://bzcqxiwycrcsmu:hbMRZUikdHaEguseLgkzc0Dyka@ec2-54-235-250-156.compute-1.amazonaws.com:5432/d6p1tgnp1b7nsp"
 def main():
     urlparse.uses_netloc.append("postgres")
     url = urlparse.urlparse(os.environ["DATABASE_URL"])
@@ -10,8 +10,8 @@ def main():
 
 
     cur = conn.cursor()
-    cur.execute("select url from pages;")
-    db_name = [x[0] for x in cur.fetchall()]
+    cur.execute("select max(number) from pages;")
+    db_name = cur.fetchall()
     print db_name
     
 
