@@ -173,8 +173,8 @@ def main():
                 continue
             
             #データベース書き込み用ファイルにページ情報を書き込む
-            str1 = "@page.title = \"" + title.encode("utf-8") + "\""
-            str1 = str1.replace("\n", "").replace("\"", "")
+            str1 = "@page.title = \"" + title.encode("utf-8").replace("\"", "") + "\""
+            str1 = str1.replace("\n", "")
             str1 += "\n"
             urls = url.replace("\n", "")
 
