@@ -1,71 +1,103 @@
 #coding: utf-8
 @page = Page.new
-@page.number = 128
-@page.title = "【悲報】VRで統合失調症の幻覚疑似体験ｗｗｗｗｗｗｗｗ : ニコニコVIP2ch"
-@page.url = "http://blog.livedoor.jp/nicovip2ch/archives/1973973.html"
-@page.image = "/images/610768ad-s.jpg"
-@page.body = "1:   2016/10/24(月) 22:34:55.46 ID:kwRmrwhy0 BE:837857943-PLT(16930) ポイント特典引用元: ・・・統合失調症の幻覚疑似体験　バーチャルハルシネーションできるよ"
-@page.site_name = "ニコニコVIP2ch"
-@page.date = "2016/10/28"
+@page.number = 99
+@page.title = "巨乳！「吉川あいみ（よしかわあいみ）」とアダルトVRでエロ同棲生活体験！"
+@page.url = "http://protosketch.co/archives/adult_category/onany"
+@page.image = "/images/waap007.jpg"
+@page.body = ""
+@page.site_name = "VR通信｜ゲーム、ニュース、レビュー、価格比較はここで！日本最大級のVR(バーチャルリアリティー)情報サイト"
+@page.date = "2016/11/09"
 @page.save
 
 @page = Page.new
-@page.number = 127
-@page.title = "【VRカノジョ】変態紳士のリビドーがムンムンこもるVRアダルトゲームを体験。機材トラブルの末に見えたモノは？【アスキーチャンネル デジデジ90】"
-@page.url = "http://news.denfaminicogamer.jp/kikakuthetower/vr_kanojo/6"
-@page.image = "/images/d8c86db6f103f8638b527b46b33612bf.jpg"
-@page.body = "2016年10月18日、アスキー編集部のニコニコ生放送「デジデジ90」にて、“変態紳士集合！最新アダルトVRナイトby全ギ研”が放送された。期待のアダルトVRタイトル『ハニーセレクト』の解説、そして2017年1月発売予定の新作『VRカノジョ』のデモプレイ体験の模様を抜粋してお届けする。アダルトVRについて熱く語るミナミダ＆ハッチに、終始ヒキまくりのつばさちゃんが”HPをガリガリ削られた”という、濃ゆ〜い放送となった。"
-@page.site_name = "電ファミニコゲーマー企画記事"
-@page.date = "2016/10/28"
+@page.number = 98
+@page.title = "アダルトVRオナニーに最適！電動オナホ「A10ピストン」の性能、価格、レビューなど徹底解説！"
+@page.url = "http://protosketch.co/archives/adult_category/%E3%82%AA%E3%83%8A%E3%83%9B"
+@page.image = "/images/1_1371799873_m_IZIpE.jpg"
+@page.body = ""
+@page.site_name = "VR通信｜ゲーム、ニュース、レビュー、価格比較はここで！日本最大級のVR(バーチャルリアリティー)情報サイト"
+@page.date = "2016/11/09"
 @page.save
 
 @page = Page.new
-@page.number = 126
-@page.title = "インターネット、二次元、ポケモン、VR、これらもほぼ現実逃避だわな。		日.."
-@page.url = "http://anond.hatelabo.jp/20161026003232"
-@page.image = "/images/og-image-1500.gif"
-@page.body = "インターネット、二次元、ポケモン、VR、これらもほぼ現実逃避だわな。日本経済にマイナスなので全部まとめて犯罪扱いにしてしょっ引けよ。避妊…"
-@page.site_name = "はてな匿名ダイアリー"
-@page.date = "2016/10/28"
+@page.number = 97
+@page.title = "美少女キャラとアキバで混浴！VR温泉コンテンツのデモが5日にスタート「パズルオブエンパイア」に登場するキャラが登場"
+@page.url = "http://akiba-pc.watch.impress.co.jp/docs/news/news/1028424.html"
+@page.image = "/images/vr002.jpg"
+@page.body = "　美少女キャラクターと一緒に温泉に入っているような雰囲気に浸れるというVRコンテンツ「VRぱずえん温泉～ローマ風～」の体験デモが、ドスパラ VRパラダイスで5日（土）12時から始まった。"
+@page.site_name = "AKIBA PC Hotline!"
+@page.date = "2016/11/09"
 @page.save
 
 @page = Page.new
-@page.number = 125
-@page.title = "ジレットが「史上最高」と誇るT字ひげ剃り、その実力をVR美女と体験してきた"
-@page.url = "http://www.lifehacker.jp/2016/10/161026gillette_vr.html"
-@page.image = "/images/161026gillette_vr_top1-thumb-640x360-100817.jpg"
-@page.body = "ジレットが開発したメンズ用T字カミソリ「ジレット プロシールド」は、従来品が..."
-@page.site_name = "ライフハッカー［日本版］"
-@page.date = "2016/10/28"
+@page.number = 96
+@page.title = "【夢広がりすぎ】美少女キャラと一緒にお風呂に入れるVRコンテンツｗｗｗｗｗｗｗ：はちま起稿"
+@page.url = "http://blog.esuteru.com/archives/20004780.html"
+@page.image = "/images/4a3ea20d7124f8dc8d5c35ccb3b77a09_tb.jpg"
+@page.body = "【夢広がりすぎ】美少女キャラと一緒にお風呂に入れるVRコンテンツｗｗｗｗｗｗｗの記事詳細。国内最大のエンタメまとめメディアサイト。ゲーム情報、アニメや漫画、時事ネタなど、たくさんのネタを面白おかしく紹介します。"
+@page.site_name = "はちま起稿"
+@page.date = "2016/11/09"
 @page.save
 
 @page = Page.new
-@page.number = 124
-@page.title = "ジレットが「史上最高」と誇るT字ひげ剃り、その実力をVR美女と体験してきた - ライブドアニュース"
-@page.url = "http://news.livedoor.com/article/detail/12197067/"
-@page.image = "/images/d41cf_227_584dca1655261510c9c318b7d2124c44.jpg"
-@page.body = "ひげ剃りの3大お悩みに全部応える、技ありの1本です。曰く、ヒリヒリしない、肌荒れしない、カミソリ負けしない。ジレットが開発したメンズ用T字カミソリ「ジレット プロシールド」は、従来品が抱えてきたある問題"
-@page.site_name = "ライブドアニュース"
-@page.date = "2016/10/28"
+@page.number = 95
+@page.title = "【2.5次元】エロゲー「VRカノジョ」の見どころは「扇風機になりたい」モード！次世代アダルトコンテンツ登場でVRはどうなるのか？ - 2.5次元より愛を込めて"
+@page.url = "http://ito2-5.hatenablog.com/entry/2016/11/08/120000"
+@page.image = "/images/20161107105654.jpg"
+@page.body = "ソパ！ カノジョいるかい？ 筆者は10代のころはカノジョが欲しかったが、その夢は叶わなかった。 だけど、いまVRでカノジョが出来る時代。 たとえ仮想現実だとしても、欲しいものは欲しい！ というわけで、今回はVRでカノジョができるという話題だ。 もくじ アダルトVR「VRカノジョ」 独特な仕掛け 「VRカノジョ」のバージョンアップ予想 まとめ アダルトVR「VRカノジョ」 ついにVRでエロゲーがでる。 タイトルは「VRカノジョ」。 分かりやすいストレートな名前だ。 開発は「イリュージョン」というところ。 アダルトサイトになるので公式HPは自分で調べてね。 「Oculus Rift」「HTC Vi…"
+@page.site_name = "2.5次元より愛を込めて"
+@page.date = "2016/11/09"
 @page.save
 
 @page = Page.new
-@page.number = 123
-@page.title = "1万円以下でも大満足！ 手持ちのスマホで楽しむ最新VRゴーグル | 日刊SPA!"
-@page.url = "http://nikkan-spa.jp/1220693"
-@page.image = "/images/geek_161011_05.jpg"
-@page.body = "映画『マトリックス』のようなバーチャルリアリティ（仮想現実）が、より手軽に体験可能に！手持ちのスマホと組み合わせて、最新技術のVRコンテンツを堪能しよう！東京ゲームショウ2016でも話題独占。手軽に…"
-@page.site_name = "日刊SPA!"
-@page.date = "2016/10/28"
+@page.number = 94
+@page.title = "VRが誘う映像世界の可能性と危うさ - 木代泰之｜WEBRONZA - 朝日新聞社"
+@page.url = "http://webronza.asahi.com/business/articles/2016103100007.html"
+@page.image = "/images/2016103100007_1.jpeg"
+@page.body = "仮想映像の中に飛び込んで体験する　バーチャルリアリティー(VR=仮想現実)の映像が、エンタメやモノづくり、教育、医療、観光など様々な分野に広がってきた。「まるで現実のように作られた仮想映像の中に、ユー"
+@page.site_name = "WEBRONZA（ウェブロンザ）"
+@page.date = "2016/11/09"
 @page.save
 
 @page = Page.new
-@page.number = 122
-@page.title = "VRデバイス7製品を一挙展示。VR関連セッションも充実の【CEDEC＋KYUSHU2016】 | VRbeat"
-@page.url = "http://www.vrbeat.net/2651"
-@page.image = "/images/01_640.jpg"
-@page.body = "日本最大のゲーム開発者向け技術カンファレンス【CEDEC（コンピューターエンターテイメントデベロッパーズカンファレンス）】。毎年8月に横浜パシフィコで開催されるイベントで、ここ数年来VR関連のセッションが急増している。一方でCEDECは地方開催も進めており、その一環として10月22日に九州大学大橋キャンパスで【CEDEC＋KYUSHU2016】が開催された。"
-@page.site_name = "VRbeat"
-@page.date = "2016/10/28"
+@page.number = 93
+@page.title = "VRの普及が、オンラインゲーム内でのセクハラをエスカレートさせる | ニコニコニュース"
+@page.url = "http://news.nicovideo.jp/watch/nw2482056"
+@page.image = "/images/2190034l.jpg"
+@page.body = "仮想現実なら何でもアリって思ってる？オンラインゲームで遊んだことのある女性の多くが、何かしらの形でセクハラを受けた経験があるはずです。ハラッサー（ハラスメントをする人）は、ほんの軽い冗談や親しみの表現のつもりで、メッセージやチャットで卑猥な言葉を掛けたり、さらに悪意がある場合には、ポルノ画像..."
+@page.site_name = "ニコニコニュース"
+@page.date = "2016/11/09"
+@page.save
+
+@page = Page.new
+@page.number = 92
+@page.title = "美少女×ホラー×VRは相性バツグン！ 『オルガル』で新イベント“悪夢の箱とお嬢様”開催中"
+@page.url = "http://dengekionline.com/elem/000/001/404/1404596/"
+@page.image = "/images/alterna_03_cs1w1_463x800.jpg"
+@page.body = "美少女RPG『オルタナティブガールズ』で、VRモードに対応したホラーストーリーイベント“悪夢の箱とお嬢様”が開催中です。"
+@page.site_name = "電撃オンライン"
+@page.date = "2016/11/09"
+@page.save
+
+@page = Page.new
+@page.number = 91
+@page.title = "VRの普及がセクハラをエスカレートさせると思いませんか？ VRでセクハラ受けた女性の体験談がひどい・・・ : オレ的ゲーム速報＠刃"
+@page.url = "http://jin115.com/archives/52153879.html"
+@page.image = "/images/5e5b59fc.jpg"
+@page.body = "VRの普及がセクハラをエスカレートさせると思いませんか？ VRでセクハラ受けた女性の体験談がひどい・・・の記事ページ"
+@page.site_name = "オレ的ゲーム速報@刃"
+@page.date = "2016/11/09"
+@page.save
+
+@page = Page.new
+@page.number = 90
+@page.title = "ローランド、音/映像の操作を自動化できるフルHD対応のAVミキサー「VR-4HD」（マイナビニュース） - グノシー"
+@page.url = "https://gunosy.com/articles/R5LDc"
+@page.image = "/images/9429ea4e767517f89d413ab5e1a77586_content.jpg"
+@page.body = "ローランドは、ビデオカメラやパソコン、マイクなどの機器を接続して、タッチ操作での映像の切り替えや音量の調節が行えるフルHD対応のAVミキサー「VR-4HD」を12月中旬に発売する。価格はオープン、市場予想価格は税込で300,000円前後となる模様。
+VR-4HD
+同製品は、A4サイズで質量は2.4kgと軽量・コンパクト設計ながら、フルHD画質に対応するAVミキサーである。映像切り替えや合成が行える"
+@page.site_name = "グノシー 雑談力がつくニュースアプリ"
+@page.date = "2016/11/09"
 @page.save
 
