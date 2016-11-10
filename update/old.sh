@@ -33,5 +33,5 @@ rake assets:precompile RAILS_ENV=production
 git add .
 comment="update"
 git commit -m $comment$d
-git push heroku master
-heroku run rake db:seed
+rake db:seed RAILS_ENV=production
+
