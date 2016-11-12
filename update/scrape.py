@@ -42,8 +42,6 @@ def download_img(src,maxsize,current):
             print ">>>get:",filename
 
         print "three"
-#        kaizoudo = Image.open(path+filename).size
-#        newsize = kaizoudo[0]*kaizoudo[1]
         #画像解像度
         newsize = reduce(lambda x,y:x*y, Image.open(path+filename).size)
 

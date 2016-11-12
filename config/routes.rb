@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get '/top' => 'home#top'
   get '/home/top/:start' => "home#top"
   get '/about' => "home#about"
+  get '/video' => "home#video"
 #  get '/inqury' => "home#inqury"
 #  get '/video' => "home#video"
   
