@@ -1,0 +1,227 @@
+<div class="articles">
+<% @page.each_slice(4) do |arr1, arr2, arr3, arr4| %>
+    <div class="row-fluid">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+	    <% if !arr1.nil? then %>
+	    
+	    <% if arr1.title.length > 39 then %>
+	        <% subt1 = arr1.title[0,38] + ". . . " %>
+		<% else %>
+		    <% subt1 = arr1.title %>
+		    <% end %>
+		    <% if arr1.site_name.bytesize > 25 then %>
+		        <% st1 = arr1.site_name[0,9] + "..." %>
+			<% else %>
+			    <% st1 = arr1.site_name %>
+			    <% end %>
+			    <div class="imagewrapper-lg visible-lg visible-md">
+			          <%= link_to image_tag(arr1.image, {:border=>"0", :alt=>"image", :width=>"100%", :height=>"230"}), arr1.url, :target=>["_blank"]%>
+				  </div>
+
+			    <div class="imagewrapper-sm visible-sm visible-xs">
+			          <%= link_to image_tag(arr1.image, {:border=>"0", :alt=>"image", :width=>"100%", :height=>"280"}), arr1.url, :target=>["_blank"]%>
+				  </div>
+			    
+			    <div class="subtitlelayer visible-lg visible-md">
+			          <div class="subtitle">
+				    <%= link_to subt1, arr1.url ,:target=>["_blank"], :style=>"color:white; text-decoration:none;"%>
+				        </div>
+				  </div>
+
+			    <div class="subtitlelayer-sm visible-sm visible-xs">
+			          <div class="subtitle-sm">
+				    <%= link_to subt1, arr1.url ,:target=>["_blank"], :style=>"color:white; text-decoration:none;"%>
+				        </div>
+				  </div>
+			    
+			    <div class="datelayer visible-lg visible-md">
+			          <div class="date">
+				    <%= arr1.date %>
+				        </div>
+				      <div class="sites">
+					<%= st1 %>
+					    </div>
+				      </div>
+
+			    <div class="datelayer-sm visible-sm visible-xs">
+			          <div class="date">
+				    <%= arr1.date %>
+				        </div>
+				      <div class="sites">
+					<%= st1 %>
+					    </div>
+				      </div>
+			    
+			        <% end %>
+				</div>
+      
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+	    <% if !arr2.nil? then %>
+	    <% if arr2.title.length > 39 then %>
+	        <% subt2 = arr2.title[0,38] + ". . . " %>
+		<% else %>
+		    <% subt2 = arr2.title %>
+		    <% end %>
+		    <% if arr2.site_name.bytesize > 25 then %>
+		        <% st2 = arr2.site_name[0,9] + "..." %>
+			<% else %>
+			    <% st2 = arr2.site_name %>
+			    <% end %>
+			    
+			    <div class="imagewrapper-lg visible-lg visible-md">
+			          <%= link_to image_tag(arr2.image, {:border=>"0",:alt=>"image", :width=>"100%",:height=>"230"}), arr2.url, :target=>["_blank"]%>
+				  </div>
+
+			    <div class="imagewrapper-sm visible-sm visible-xs">
+			          <%= link_to image_tag(arr2.image, {:border=>"0", :alt=>"image", :width=>"100%", :height=>"280"}), arr2.url, :target=>["_blank"]%>
+				  </div>
+			    
+			    <div class="subtitlelayer visible-lg visible-md">
+			          <div class="subtitle">
+				    <%= link_to subt2, arr2.url ,:target=>["_blank"],:style=>"color:white; text-decoration:none;" %>
+				        </div>
+				  </div>
+
+			    <div class="subtitlelayer-sm visible-sm visible-xs">
+			          <div class="subtitle-sm">
+				    <%= link_to subt2, arr2.url ,:target=>["_blank"], :style=>"color:white; text-decoration:none;"%>
+				        </div>
+				  </div>
+			    
+			    <div class="datelayer visible-lg visible-md">
+			          <div class="date">
+				    <%= arr2.date %>
+				        </div>
+				      <div class="sites">
+					<%= st2 %>
+					    </div>
+				      </div>
+
+			    <div class="datelayer-sm visible-sm visible-xs">
+			          <div class="date">
+				    <%= arr2.date %>
+				        </div>
+				      <div class="sites">
+					<%= st2 %>
+					    </div>
+				      </div>
+			    
+			        <% end %>
+				</div>
+      
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+	    <% if !arr3.nil? then %>
+	    <% if arr3.title.length > 39 then %>
+	        <% subt3 = arr3.title[0,38] + ". . . " %>
+		<% else %>
+		    <% subt3 = arr3.title %>
+		    <% end %>
+		    <% if arr3.site_name.bytesize > 25 then %>
+		        <% st3 = arr3.site_name[0,9] + "..." %>
+			<% else %>
+			    <% st3 = arr3.site_name %>
+			    <% end %>
+			    
+			    <div class="imagewrapper-lg visible-lg visible-md">
+			          <%= link_to image_tag(arr3.image, {:border=>"0",:alt=>"image", :width=>"100%", :height=>"230"}), arr3.url, :target=>["_blank"]%>
+				  </div>
+
+			    <div class="imagewrapper-sm visible-sm visible-xs">
+			          <%= link_to image_tag(arr3.image, {:border=>"0", :alt=>"image", :width=>"100%", :height=>"280"}), arr3.url, :target=>["_blank"]%>
+				  </div>
+			    
+			    <div class="subtitlelayer visible-lg visible-md">
+			          <div class="subtitle">
+				    <%= link_to subt3, arr3.url ,:target=>["_blank"],:style=>"color:white; text-decoration:none;" %>
+				        </div>
+				  </div>
+
+			    <div class="subtitlelayer-sm visible-sm visible-xs">
+			          <div class="subtitle-sm">
+				    <%= link_to subt3, arr3.url ,:target=>["_blank"], :style=>"color:white; text-decoration:none;"%>
+				        </div>
+				  </div>
+			    
+			    <div class="datelayer visible-lg visible-md">
+			          <div class="date">
+				    <%= arr3.date %>
+				        </div>
+				      <div class="sites">
+					<%= st3 %>
+					    </div>
+				      </div>
+
+			    <div class="datelayer-sm visible-sm visible-xs">
+			          <div class="date">
+				    <%= arr3.date %>
+				        </div>
+				      <div class="sites">
+					<%= st3 %>
+					    </div>
+				      </div>
+
+
+			    
+			        <% end %>
+				</div>
+      
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+	    <% if !arr4.nil? then %>
+	    <% if arr4.title.length > 39 then %>
+	        <% subt4 = arr4.title[0,38] + ". . . " %>
+		<% else %>
+		    <% subt4 = arr4.title %>
+		    <% end %>
+		    <% if arr4.site_name.bytesize > 25 then %>
+		        <% st4 = arr4.site_name[0,9] + "..." %>
+			<% else %>
+			    <% st4 = arr4.site_name %>
+			    <% end %>
+			    
+			    <div class="imagewrapper-lg visible-lg visible-md">
+			          <%= link_to image_tag(arr4.image, {:border=>"0", :alt=>"image", :width=>"100%",:height=>"230"}), arr4.url, :target=>["_blank"]%>
+				  </div>
+
+			    <div class="imagewrapper-sm visible-sm visible-xs">
+			          <%= link_to image_tag(arr4.image, {:border=>"0", :alt=>"image", :width=>"100%", :height=>"280"}), arr4.url, :target=>["_blank"]%>
+				  </div>
+			    
+			    <div class="subtitlelayer visible-lg visible-md">
+			          <div class="subtitle">
+				    <%= link_to subt4, arr4.url ,:target=>["_blank"],:style=>"color:white; text-decoration:none;" %>
+				        </div>
+				  </div>
+
+			    <div class="subtitlelayer-sm visible-sm visible-xs">
+			          <div class="subtitle-sm">
+				    <%= link_to subt4, arr4.url ,:target=>["_blank"], :style=>"color:white; text-decoration:none;"%>
+				        </div>
+				  </div>
+
+			    
+			    <div class="datelayer visible-lg visible-md">
+			          <div class="date">
+				    <%= arr4.date %>
+				        </div>
+				      <div class="sites">
+					<%= st4 %>
+					    </div>
+				      </div>
+
+
+			    <div class="datelayer-sm visible-sm visible-xs">
+			          <div class="date">
+				    <%= arr4.date %>
+				        </div>
+				      <div class="sites">
+					<%= st4 %>
+					    </div>
+				      </div>
+			    
+			        <% end %>
+				</div>
+    </div>
+<% end %>
+</div>
+
+<%= paginate @page %>
