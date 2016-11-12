@@ -39,7 +39,7 @@ class HomeController < ApplicationController
   end
   
   def video
-    @video = Video.order("id").page(params[:page]).per(40)
+    @video = Video.order("RANDOM()").reverse_order.page(params[:page]).per(40)
   end
 
 end

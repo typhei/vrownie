@@ -1,0 +1,17 @@
+#coding:utf-8
+
+def main():
+    #変数定義
+    url = "http://www.afesta.tv/vr/"
+    retVar = []
+
+    res = urllib2.urlopen(url)
+    soup = BeautifulSoup(res.read())
+    m = soup.find(id="contents_new")
+    print m
+    
+
+
+    
+if __name__ == "__main__":
+    main()
