@@ -9,64 +9,108 @@
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     </head>
-
+    
     <body>
-	<!-- end nav -->
-	<div class="container-fruid">
-	    <div class="row-fluid">
-		<header class="navbar">
-		    <!-- pcでのロゴ表示 -->
-		    <span id="desc" class="visible-lg visible-md">18禁アダルトVRまとめサイト</span>
-		    <span id="desc-sm" class="visible-sm visible-xs">18禁アダルトVRまとめサイト</span>
-		    <div id="logo-lg" class="visible-lg visible-md">
-			 <%= link_to image_tag("/logo.png", {:alt=>"logo", :size=>"500x100"}), "/top"%>
-		    </div>
-
-		    <!-- タブレット・スマホでのロゴ表示 -->
-		    <div id="logo-md" class="visible-sm visible-xs">
-			<%= link_to image_tag("/logo.png", {:alt=>"logo", :size=>"600x120"}), "/top" %>
-		    </div>
-		    
-	    	    <div id="snswrapper" class="visible-lg visible-md">
-			<div class="snslogo visible-lg visible-md">
-			    <%= link_to image_tag("/twitterlogo.png", {:size=>"35x35", :alt=>"twitter"}), "https://twitter.com/VR_ERO" %>
-			</div>
-			<div class="snslogo visible-lg visible-md">
-			    <%= image_tag("/fblogo.png", {:size=>"35x35", :alt=>"twitlogo"})%>
-			</div>
-			<div class="snslogo visible-lg visible-md">
-			    <%= image_tag("/googlelogo.jpeg", {:size=>"35x35", :alt=>"twitlogo"})%>
-			</div>
-		    </div>
-
-
-		    <div id="snswrapper-sm" class="visible-sm visible-xs">
-			<div class="snslogo-sm visible-sm visible-xs">
-			    <%= link_to image_tag("/twitterlogo.png", {:size=>"60x60", :alt=>"twitter"}), "https://twitter.com/VR_ERO" %>
-			</div>
-			<div class="snslogo-sm visible-sm visible-xs">
-			    <%= image_tag("/fblogo.png", {:size=>"60x60", :alt=>"twitlogo"})%>
-			</div>
-			<div class="snslogo-sm visible-sm visible-xs">
-			    <%= image_tag("/googlelogo.jpeg", {:size=>"60x60", :alt=>"twitlogo"})%>
-			</div>
-		    </div>
-
-
-		    
-		</header>
+	<header class="navbar_origin">
+	    <!-- pcでのロゴ表示 -->
+	    <span id="desc" class="visible-lg visible-md">18禁アダルトVRまとめサイト</span>
+	    <span id="desc-sm" class="visible-sm visible-xs">18禁アダルトVRまとめサイト</span>
+	    <div id="logo-lg" class="visible-lg visible-md">
+		<%= link_to image_tag("/logo.png", {:alt=>"logo", :size=>"500x100"}), "/top"%>
 	    </div>
-		    
-		
+
+	    <!-- タブレット・スマホでのロゴ表示 -->
+	    <div id="logo-md" class="visible-sm visible-xs">
+		<%= link_to image_tag("/logo.png", {:alt=>"logo", :size=>"600x120"}), "/top" %>
+	    </div>
+
+
 	    <% if @ad == 1 then %>
-		<div class="row-fluid">
-		    <div class="col-lg-12 col-md-12 col-sm-12">
-			<div id ="adwrapper-top" class="hidden-xs">
-			    <%= javascript_include_tag "https://adm.shinobi.jp/s/9b26b2475f9cae9f7cf83fbfd350cdf3" %>
-			</div>
-		    </div>
+		<div class ="adwrapper-top" class="hidden-xs">
+		    <%= javascript_include_tag "https://adm.shinobi.jp/s/9b26b2475f9cae9f7cf83fbfd350cdf3" %>
 		</div>
 	    <% end %>
+	    
+	    <div id="snswrapper" class="visible-lg visible-md">
+		<div class="snslogo visible-lg visible-md">
+		    <%= link_to image_tag("/twitterlogo.png", {:size=>"35x35", :alt=>"twitter"}), "https://twitter.com/VR_ERO" %>
+		</div>
+		<div class="snslogo visible-lg visible-md">
+		    <%= image_tag("/fblogo.png", {:size=>"35x35", :alt=>"twitlogo"})%>
+		</div>
+		<div class="snslogo visible-lg visible-md">
+		    <%= image_tag("/googlelogo.jpeg", {:size=>"35x35", :alt=>"twitlogo"})%>
+		</div>
+	    </div>
+	    
+	    
+	    <div id="snswrapper-sm" class="visible-sm visible-xs">
+		<div class="snslogo-sm visible-sm visible-xs">
+		    <%= link_to image_tag("/twitterlogo.png", {:size=>"60x60", :alt=>"twitter"}), "https://twitter.com/VR_ERO" %>
+		</div>
+		<div class="snslogo-sm visible-sm visible-xs">
+		    <%= image_tag("/fblogo.png", {:size=>"60x60", :alt=>"twitlogo"})%>
+		</div>
+		<div class="snslogo-sm visible-sm visible-xs">
+		    <%= image_tag("/googlelogo.jpeg", {:size=>"60x60", :alt=>"twitlogo"})%>
+		</div>
+	    </div>
+	    <div class="clear"></div>
+	</header>
+
+	<!-- メニューバー -->
+	<nav class="navbar navbar-default" role="navigation" style="margin-bottom:30px;">
+	    <div class="container-fluid">
+
+		<!-- スマートフォンサイズで表示されるメニューボタンとテキスト -->
+		<div class="navbar-header">
+
+		    <!-- 
+
+			 メニューボタン 
+			 
+			 data-toggle : ボタンを押したときにNavbarを開かせるために必要
+			 data-target : 複数navbarを作成する場合、ボタンとナビを紐づけるために必要
+
+		       -->
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-menu-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		    </button>
+		    
+		    <!-- タイトルなどのテキスト -->
+		    <!-- <a class="navbar-brand" href="#">Designup.jp</a>-->
+
+		</div>
+
+		<!-- グローバルナビの中身 -->
+		<div class="collapse navbar-collapse" id="nav-menu-1">
+		    
+		    <!-- 各ナビゲーションメニュー -->
+		    <ul class="nav navbar-nav">
+
+			<!-- 通常のリンク -->
+			<li class="<%= 'active' if controller.action_name == 'top' %>"><%= link_to "VRニュース", "/top" %></li>
+			<li class="<%= 'active' if controller.action_name == 'video' %>"><%= link_to "VR動画", "/video"%></li>
+
+			<!-- ドロップダウンのメニューも配置可能 -->
+			<li class="dropdown">
+			    <a href="#" class="dropdown-toggle" data-toggle="dropdown">その他<b class="caret"></b></a>
+			    <ul class="dropdown-menu">
+				<li><a href="/about">このサイトについて</a></li>
+			    </ul>
+			</li>
+			
+		    </ul>
+
+		</div>
+	    </div>
+	</nav>
+
+
+	    <div class="container-fluid">
 	    
 		<%= yield %>
 

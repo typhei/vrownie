@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -4166,12 +4167,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
   .navbar {
-    //border-radius: 4px;
+    border-radius: 4px;
   }
 }
 @media (min-width: 768px) {
@@ -4493,9 +4494,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-    //background-color: #f8f8f8;
-    background-color:#f5f5f5;
-    border-color: #e7e7e7;
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
   color: #777;
@@ -6756,3 +6756,323 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+@charset "UTF-8";
+/* 共通レイアウト ================================ */
+/* line 10, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 17, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+body {
+  height: 100%;
+  width: 100%;
+  color: #364a5f;
+  background-color: #faf0e6;
+}
+
+/* ヘッダー ================================ */
+/* line 26, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.navbar {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  z-index: 100;
+  position: relative;
+}
+
+/* line 34, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.navbar-sm {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  z-index: 100;
+  position: relative;
+}
+
+/* line 42, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+#desc {
+  display: inline-block;
+  width: 500px;
+  margin-top: 5px;
+  margin-left: 10px;
+  height: auto;
+  font-size: 17px;
+  color: #808080;
+}
+
+/* line 52, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+#desc-sm {
+  display: inline-block;
+  width: 500px;
+  margin-top: 5px;
+  margin-left: 10px;
+  height: auto;
+  font-size: 25px;
+  color: #808080;
+}
+
+/* line 67, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+#snswrapper {
+  height: 35px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  argin-right: 15px;
+  margin-bottom: 10px;
+}
+
+/* line 76, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.snslogo {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+  float: left;
+}
+
+/* line 83, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+#snswrapper-sm {
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  argin-right: 15px;
+  margin-bottom: 10px;
+}
+
+/* line 92, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.snslogo-sm {
+  width: 60px;
+  height: 60px;
+  margin-right: 5px;
+  float: left;
+}
+
+/* line 99, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+#adwrapper-top {
+  width: 728px;
+  margin: 0 auto 30px;
+}
+
+/* line 104, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+#adwrapper-bottom {
+  width: 728px;
+  margin: 20px auto 10px;
+}
+
+/* フッター ================================ */
+/* line 112, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.footer {
+  width: 100%;
+  height: 60px;
+  color: black;
+  background-color: white;
+}
+
+/* line 119, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.small {
+  width: 100%;
+  height: 15px;
+  margin-top: 20px;
+}
+
+/* line 125, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.links {
+  font-size: 16px;
+  display: inline-block;
+  margin: 0 15px;
+}
+
+/* line 132, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.footer-sm {
+  width: 100%;
+  height: 140px;
+  color: black;
+  background-color: white;
+}
+
+/* line 139, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.small-sm {
+  width: 100%;
+  height: 100px;
+  margin: 30px auto 0;
+}
+
+/* line 145, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.links-sm {
+  font-size: 90px;
+  display: inline-block;
+  margin: 0 15px;
+}
+
+/* 独自 ================================*/
+/* line 154, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.imagewrapper-lg {
+  width: 100%;
+  height: 230px;
+  box-shadow: 1px 1px 1px;
+}
+
+/* line 160, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.imagewrapper-sm {
+  width: 100%;
+  height: 280px;
+  box-shadow: 1px 1px 1px;
+}
+
+/* line 166, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.subtitlelayer {
+  height: 85px;
+  overflow: hidden;
+  background-color: #20b2aa;
+  box-shadow: 1px 1px 1px;
+}
+
+/* line 173, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.subtitlelayer-sm {
+  background-color: #20b2aa;
+  height: 150px;
+  box-shadow: 1px 1px 1px;
+  overflow: hidden;
+}
+
+/* line 180, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.subtitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* line 185, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.subtitle-sm {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+/* line 191, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.datelayer {
+  width: auto;
+  height: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: white;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 1px;
+  overflow: hidden;
+}
+
+/* line 202, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.datelayer-sm {
+  width: auto;
+  height: 45px;
+  font-size: 27px;
+  font-weight: bold;
+  background-color: white;
+  margin-bottom: 50px;
+  box-shadow: 1px 1px 1px;
+  overflow: hidden;
+}
+
+/* line 213, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.date {
+  color: blue;
+  float: left;
+  padding-left: 5px;
+}
+
+/* line 219, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.sites {
+  color: blue;
+  float: right;
+  padding-right: 5px;
+}
+
+/* ページ遷移部分 */
+/* line 227, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.paging {
+  width: 600px;
+  margin: 20px auto 0;
+}
+
+/* line 233, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.start_number {
+  width: 50px;
+  height: 40px;
+  float: left;
+  margin: 0 5px;
+}
+
+/* line 240, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.numbers {
+  width: 50px;
+  height: 40px;
+  float: left;
+  margin: 0 5px;
+}
+
+/* line 247, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.numbers:hover {
+  background-color: #d3d3d3;
+}
+
+/* line 251, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.inner {
+  width: 100%;
+  height: 100%;
+  padding-top: 4px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+/* googleフォーム*/
+/* line 266, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.clear {
+  clear: both;
+  height: 30px;
+}
+
+/* line 271, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.searchform {
+  float: right;
+  margin-top: 15px;
+  position: relative;
+}
+
+/* aboutページ */
+/* line 279, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+#aboutbox {
+  width: 450px;
+  margin: 0 auto;
+  color: #000080;
+}
+
+/* line 285, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.abouttitle {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* line 290, /Users/taihei/Dropbox/vrownie/app/assets/stylesheets/home.scss */
+.aboutcontents {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+
+ */
+
