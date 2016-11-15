@@ -3,7 +3,6 @@
 	<div class="row-fluid">
 	    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
 		<% if !arr1.nil? then %>
-		    
 		    <% if arr1.title.length > 39 then %>
 			<% subt1 = arr1.title[0,38] + ". . . " %>
 		    <% else %>
@@ -14,6 +13,7 @@
 		    <% else %>
 			<% st1 = arr1.site_name %>
 		    <% end %>
+                    <% d1 = arr1.Date.to_s %>
 		    <div class="imagewrapper-lg visible-lg visible-md">
 			<%= link_to image_tag(arr1.image, {:border=>"0", :alt=>"image", :width=>"100%", :height=>"230"}), arr1.url, :target=>["_blank"]%>
 		    </div>
@@ -36,7 +36,7 @@
 		    
 		    <div class="datelayer visible-lg visible-md">
 			<div class="date">
-			    <%= arr1.created_at.to_s.split(" ")[0] %>
+			    <%= d1[0..3] + "年" + d1[4..5] + "月" + d1[6..7] + "日" %>
 			</div>
 			<div class="sites">
 			    <%= st1 %>
@@ -45,7 +45,7 @@
 
 		    <div class="datelayer-sm visible-sm visible-xs">
 			<div class="date">
-			    <%= arr1.created_at.to_s.split(" ")[0] %>
+			    <%= d1[0..3] + "年" + d1[4..5] + "月" + d1[6..7] + "日" %>
 			</div>
 			<div class="sites">
 			    <%= st1 %>
@@ -67,7 +67,7 @@
 		    <% else %>
 			<% st2 = arr2.site_name %>
 		    <% end %>
-		    
+		    <% d2 = arr2.Date.to_s %>
 		    <div class="imagewrapper-lg visible-lg visible-md">
 			<%= link_to image_tag(arr2.image, {:border=>"0",:alt=>"image", :width=>"100%",:height=>"230"}), arr2.url, :target=>["_blank"]%>
 		    </div>
@@ -90,7 +90,7 @@
 		    
 		    <div class="datelayer visible-lg visible-md">
 			<div class="date">
-			    <%= arr2.created_at.to_s.split(" ")[0] %>
+			    <%= d2[0..3] + "年" + d2[4..5] + "月" + d2[6..7] + "日" %>
 			</div>
 			<div class="sites">
 			    <%= st2 %>
@@ -99,7 +99,7 @@
 
 		    <div class="datelayer-sm visible-sm visible-xs">
 			<div class="date">
-			    <%= arr2.created_at.to_s.split(" ")[0] %>
+			    <%= d2[0..3] + "年" + d2[4..5] + "月" + d2[6..7] + "日" %>
 			</div>
 			<div class="sites">
 			    <%= st2 %>
@@ -121,7 +121,7 @@
 		    <% else %>
 			<% st3 = arr3.site_name %>
 		    <% end %>
-		    
+		    <% d3 = arr3.Date.to_s %>
 		    <div class="imagewrapper-lg visible-lg visible-md">
 			<%= link_to image_tag(arr3.image, {:border=>"0",:alt=>"image", :width=>"100%", :height=>"230"}), arr3.url, :target=>["_blank"]%>
 		    </div>
@@ -144,7 +144,7 @@
 		    
 		    <div class="datelayer visible-lg visible-md">
 			<div class="date">
-			    <%= arr3.created_at.to_s.split(" ")[0] %>
+			    <%= d3[0..3] + "年" + d3[4..5] + "月" + d3[6..7] + "日" %>
 			</div>
 			<div class="sites">
 			    <%= st3 %>
@@ -153,7 +153,7 @@
 
 		    <div class="datelayer-sm visible-sm visible-xs">
 			<div class="date">
-			    <%= arr3.created_at.to_s.split(" ")[0] %>
+			    <%= d3[0..3] + "年" + d3[4..5] + "月" + d3[6..7] + "日" %>
 			</div>
 			<div class="sites">
 			    <%= st3 %>
@@ -177,7 +177,7 @@
 		    <% else %>
 			<% st4 = arr4.site_name %>
 		    <% end %>
-		    
+		    <% d4 = arr4.Date.to_s %>
 		    <div class="imagewrapper-lg visible-lg visible-md">
 			<%= link_to image_tag(arr4.image, {:border=>"0", :alt=>"image", :width=>"100%",:height=>"230"}), arr4.url, :target=>["_blank"]%>
 		    </div>
@@ -201,7 +201,7 @@
 		    
 		    <div class="datelayer visible-lg visible-md">
 			<div class="date">
-			    <%= arr4.created_at.to_s.split(" ")[0] %>
+			    <%= d4[0..3] + "年" + d4[4..5] + "月" + d4[6..7] + "日" %>
 			</div>
 			<div class="sites">
 			    <%= st4 %>
@@ -211,7 +211,7 @@
 
 		    <div class="datelayer-sm visible-sm visible-xs">
 			<div class="date">
-			    <%= arr4.created_at.to_s.split(" ")[0] %>
+			    <%= d4[0..3] + "年" + d4[4..5] + "月" + d4[6..7] + "日" %>
 			</div>
 			<div class="sites">
 			    <%= st4 %>

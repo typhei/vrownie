@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import re
 import os
 import sqlite3
+import datetime
 
 imagetype = ["png", "gif", "jpg", "jpeg"]
 #####画像のダウンロード#####
@@ -118,6 +119,7 @@ def main():
     new_videos = []
     wt = open("../db/seeds.rb", "w")
     wt.write("#coding:utf-8\n")
+    today = datetime.datetime.today()
 
     #db参照
     cur = sqlite3.connect("../db/development.sqlite3").cursor()
@@ -137,6 +139,7 @@ def main():
         wt.write("@video.url = \"" + video["url"].encode("utf-8") + "\"\n")
         wt.write("@video.image = \"" + video["image"] + "\"\n")
         wt.write("@video.site_name = \"" + video["sitename"] + "\"\n")
+        wt.write("@video.Date = \"" + today.strftime("%Y%m%d") + "\"\n")
         wt.write("@video.save\n\n")
 
 

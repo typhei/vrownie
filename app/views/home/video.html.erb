@@ -1,3 +1,4 @@
+<h3>最新のVR動画</h3>
 <div id="videos">
     <div class="page">
 	<%= render 'video' %>
@@ -17,14 +18,3 @@
      itemSelector: "#videos div.page" /* このDOMに差し掛かった時に、次のページのロードが始まる*/
  });
 </script>
-
-
-<% if @ad == 1 %>
-    <div class="row-fluid">
-	<div class="col-lg-12 col-md-12 col-sm-12">
-	    <div id="adwrapper-bottom" class="hidden-xs">
-		<%= javascript_include_tag "https://adm.shinobi.jp/s/9b26b2475f9cae9f7cf83fbfd350cdf3" %>
-	    </div>
-	</div>
-    </div>
-<% end %>
