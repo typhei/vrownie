@@ -13,7 +13,10 @@ def download_img(src,path,location):
         #URLから画像を取得
         filename ="unknown"
         i = urllib2.urlopen(src)
-        filename = src.split("/")[-1]
+        if location == "/pornhub/":
+            filename = "".join(src.split("/")[-3:])
+        else:
+            filename = src.split("/")[-1]
         print "downloading..."
 
         if os.path.isfile(path+filename):
@@ -112,6 +115,28 @@ def adultFesta():
     return retVar
 
 
+def pornhub():
+    url = "http://jp.pornhub.com/vr?o=cm"
+    retVar = []
+
+    res = urllib2.urlopen(url)
+    soup = BeautifulSoup(res.read())
+    m = soup.find("ul", class_="search-video-thumbs")
+    s = m.find_all("li", class_="videoblock videoBox")
+    for i in s:
+        gotImage = download_img(i.find("img").get("data-mediumthumb"), "../public/pornhub/", "/pornhub/")
+        if gotImage is not False:
+            img = gotImage
+        else:
+            img = "sample.jpg"
+
+        span = i.find("span", class_="title")
+        link = "http://jp.pornhub.com" + span.find("a").get("href")
+        title = span.find("a").get("title")
+
+        retVar.append({"title":title, "url":link, "image":img.replace("\n", "").encode("utf-8"), "sitename":"Pornhub"})
+
+    return retVar
 
 
     
@@ -129,6 +154,7 @@ def main():
     
     new_videos.extend(pull_xvideo())
     new_videos.extend(adultFesta())
+    new_videos.extend(pornhub())
     
     for video in new_videos:
         if video["url"] in inDatabase:
