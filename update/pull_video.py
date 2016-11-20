@@ -157,7 +157,7 @@ def main():
     new_videos.extend(pornhub())
     
     for video in new_videos:
-        if video["url"] in inDatabase:
+        if video["url"].encode("utf-8") in inDatabase:
             continue
         
         wt.write("@video = Video.new\n")
