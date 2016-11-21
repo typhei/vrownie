@@ -134,7 +134,7 @@ def pornhub():
         link = "http://jp.pornhub.com" + span.find("a").get("href")
         title = span.find("a").get("title")
 
-        retVar.append({"title":title, "url":link, "image":img.replace("\n", "").encode("utf-8"), "sitename":"Pornhub"})
+        retVar.append({"title":title.replace("\n", "").replace("\"", ""), "url":link.replace("\n", ""), "image":img.replace("\n", "").encode("utf-8"), "sitename":"Pornhub"})
 
     return retVar
 
@@ -147,7 +147,7 @@ def main():
     today = datetime.datetime.today()
 
     #db参照
-    cur = sqlite3.connect("../db/development.sqlite3").cursor()
+    cur = sqlite3.connect("../db/production.sqlite3").cursor()
     inDatabase = list(cur.execute("select url from videos;"))
     inDatabase = [x[0] for x in inDatabase]
 
@@ -156,8 +156,12 @@ def main():
     new_videos.extend(adultFesta())
     new_videos.extend(pornhub())
     
+    count = 0
     for video in new_videos:
-        if video["url"].encode("utf-8") in inDatabase:
+        count += 1
+        if video["url"] in inDatabase:
+            print "continue"
+            count -= 1
             continue
         
         wt.write("@video = Video.new\n")
