@@ -13,7 +13,7 @@ def main():
     dbdict = {}
 
 
-    c = sqlite3.connect("../db/development.sqlite3").cursor()
+    c = sqlite3.connect("../db/production.sqlite3").cursor()
     db_data = list(c.execute("select number,title,url,image,body,site_name,date from pages;"))
 
     for i in db_data:
