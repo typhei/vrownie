@@ -1,21 +1,19 @@
 #!/bin/sh
-
-cd /var/www/rails/vrownie/update/
 s="urls"
-d=`date +%Y%m%d`
+d=`date +%Y%m%d%H`
 if [-f ${s}]; then
     cp urls urls_backup/$s$d
 else
     echo "new file"
 fi
-ruby /var/www/rails/vrownie/update/vrsearch.rb
+ruby vrsearch.rb
 s="sorted_URL"
 if [-f ${s}]; then
     cp sorted.URL.txt sorted_URL_backup/$s$d
 else
     echo "new file"
 fi
-python /var/www/rails/vrownie/update/sorting.py
+python sorting.py
 cd /var/www/rails/vrownie/db
 s="seeds.rb"
 if [-f ${s}]; then
@@ -23,14 +21,10 @@ if [-f ${s}]; then
 else
     echo "new file"
 fi
-cd /var/www/rails/vrownie/
-python /var/www/rails/vrownie/update/localscrape.py
-rake db:seed
-
-#heroku
-rake assets:precompile RAILS_ENV=production
-git add .
-comment="update"
-git commit -m $comment$d
-rake db:seed RAILS_ENV=production
+cd /var/www/rails/vrownie/update
+python localscrape.py
+~/.rbenv/shims/rake db:seed
+~/.rbenv/shims/rake db:seed RAILS_ENV=production
+s="news.rb"
+cp /var/www/rails/vrownie/db/seeds.rb /var/www/rails/vrownie/db/newsBackup/$d$s
 

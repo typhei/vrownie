@@ -10,27 +10,6 @@ import math
         
 Terms = [u"アダルト", u"エロアニメ", u"ポルノ", u"巨乳", u"アダルトビデオ", u"セックス", u"エロゲ", u"美女", u"美少女", u"オナニー", u"おっぱい",u"エッチ"  u"VR", u"漫画", u"同人"]
 
-
-#ページのエンコーディングチェック
-def conv_encoding(data):
-    lookup = ["iso-2022-jp", "euc-jp", "euc-jisx0213", "euc-jis-2004",
-              "iso-2022-jp-1", "iso-2022-jp-2", "iso-2022-jp-3",
-              "iso-2022-jp-ext", "iso-2022-jp-2004", "utf-7",
-              "utf-8", "utf-16", "utf-16-be", "utf-16-le",
-              "cp932", "shift-jis", "shift-jisx0213", "shift-jis-2004",
-              "hz-gb-2312","Big5-HKSCS","ascii"]
-    encode = None
-    for encoding in lookup:
-        try:
-            data = data.decode(encoding)
-            encode = encoding
-            break
-        except:
-            pass
-    return encode
-
-
-        
                 
 #取得したウェブページをVRに関連の強い順番にソート
 def main():
@@ -52,17 +31,14 @@ def main():
                 url = u"http://" + url
             html = urllib2.urlopen(url).read()
 
-            #文字コード判定・Unicodeに変換
-            code = conv_encoding(html)
-            if code is None:
-                raise "No Encoding Error"
-
             #ページをBSで処理
-            bfs = BeautifulSoup(html)
+            bfs = BeautifulSoup(html, "html.parser")
             soup = bfs.text.replace(" ", "").replace("\n", "")
 
             #OGP設定取得
             meta = bfs.find_all("meta")
+
+            print "first"
 
             for m in meta:
                 if m.get("property") is not None:
@@ -75,6 +51,8 @@ def main():
                     elif m.get("property") == "og:type":
                         types = m.get("content")
 
+            print "second"
+
 
             if title == "" or image == "" or types == "":
                 continue
@@ -85,10 +63,11 @@ def main():
                 continue
 
             #テキストのみ抽出
-            print "タイトル：",title
-            if u"VR" not in soup:
+            if "VR" not in soup:
                 continue
             
+            print "third"
+
             textlen = math.log(len(soup))
 
             #リンク数、画像数

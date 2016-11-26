@@ -97,7 +97,7 @@ def main():
     
 
     count = 1
-    c = sqlite3.connect("../db/development.sqlite3").cursor()
+    c = sqlite3.connect("../db/production.sqlite3").cursor()
     db_data = list(c.execute("select url from pages;"))
     db_data = [x[0] for x in db_data]
     maxnum = list(c.execute("select max(number) from pages;"))[0][0]
@@ -118,7 +118,7 @@ def main():
             print url
             res = urllib2.urlopen(url)
             html = res.read()
-            soup = BeautifulSoup(html)
+            soup = BeautifulSoup(html, "html.parser")
             meta = soup.find_all("meta")
             title,description,image = "","",""
             image_file = ""

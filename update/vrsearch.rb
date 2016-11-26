@@ -7,8 +7,10 @@ require "pp"
 require "cgi"
 
 #パラメータ準備
-API_KEY = "AIzaSyDWj0oLZ9E3FCz52wuP9ORo1JDTe2T96gw"
-CSE_KEY = "017109665700922583163:vg4jfedf4li"
+#API_KEY = "AIzaSyDWj0oLZ9E3FCz52wuP9ORo1JDTe2T96gw"
+#CSE_KEY = "017109665700922583163:vg4jfedf4li"
+API_KEY = "AIzaSyA6EPSSriFcLI1pHZ9WYXLsYuQvahV6aD8"
+CSE_KEY = "006433008415316538345:fq0_qqtvf6y"
 QUERIES = ["アダルト", "エロアニメ", "ポルノ", "巨乳", "アダルトビデオ", "セックス", "エロゲ", "美女", "美少女", "オナニー","おっぱい", "エッチ"]
 Number = 1
 Resnum = 10

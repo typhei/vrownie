@@ -1,6 +1,0 @@
-#!/bin/sh
-
-cd 'dirname $0'
-python pull_video.py
-cd ../db
-rake db:seed RAILS_ENV=production

@@ -165,7 +165,7 @@ def main():
             continue
         
         wt.write("@video = Video.new\n")
-        wt.write("@video.title = \"" + video["title"] + "\"\n")
+        wt.write("@video.title = \"" + video["title"].encode("utf-8") + "\"\n")
         wt.write("@video.url = \"" + video["url"].encode("utf-8") + "\"\n")
         wt.write("@video.image = \"" + video["image"] + "\"\n")
         wt.write("@video.site_name = \"" + video["sitename"] + "\"\n")
