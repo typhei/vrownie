@@ -1,0 +1,85 @@
+<div class="container-fluid" style="padding:0; margin-top:-11px;">
+  <div class="row-fluid" style="margin:0">
+    <div class="category-bar" style="background-color:#e62f8b;">
+      新着ニュース
+    </div>
+    <% count = 0 %>
+    <% @page.each do |page| %>
+      <div class="col-sm-12 col-xs-12" style="padding:0;">
+      <% if !page.nil? then %>
+        <% count += 1 %>
+        <% if count == 1 then %>
+	    <div class="borderless">
+		          <div class="titlePart">
+			    <%= link_to page.title, page.url, {:target=>["_blank"], :style=>"text-decoration:none; color:#364a5f;"} %>
+			        </div>
+			      <div class="imgPart">
+				<%= link_to image_tag(page.image, {:border=>"0", :alt=>"image", :size=>"220x220"}), page.url, :target=>["_blank"]%>
+				    </div>
+			      </div>
+		        <% else %>
+			<div class="article">
+			      <div class="titlePart">
+				<%= link_to page.title, page.url, {:target=>["_blank"], :style=>"text-decoration:none; color:#364a5f;"} %>
+				    </div>
+			          <div class="imgPart">
+				    <%= link_to image_tag(page.image, {:border=>"0", :alt=>"image", :size=>"220x220"}), page.url, :target=>["_blank"]%>
+				        </div>
+				  </div>
+			    <% end %>
+			    <% end %>
+	  </div>
+          <% if count >= 5 then %>
+            <% break %>
+          <% end %>
+	  <% end %>
+	  <div class="col-sm-6 col-xs-6 col-sm-offset-3 col-xs-offset-3" style="padding:0;">
+	        <div class="detailPage">
+		  <a href="/news">続きを見る　＞</a>
+		      </div>
+		</div>
+    </div>
+</div>
+
+<div class="container-fluid" style="padding:0; margin-top:-11px;">
+    <div class="row-fluid" style="margin:0">
+      <div class="category-bar" style="background-color:#0075c2;">
+	    新着動画
+	    </div>
+      <% count = 0 %>
+      <% @video.each do |page| %>
+          <div class="col-sm-12 col-xs-12" style="padding:0;">
+	    <% if !page.nil? then %>
+	        <% count += 1 %>
+		    <% if count == 1 then %>
+		    <div class="borderless">
+		          <div class="titlePart">
+			    <%= link_to page.title, page.url, {:target=>["_blank"], :style=>"text-decoration:none; color:#364a5f;"} %>
+			        </div>
+			      <div class="imgPart">
+				<%= link_to image_tag(page.image, {:border=>"0", :alt=>"image", :size=>"220x220"}), page.url, :target=>["_blank"]%>
+				    </div>
+			      </div>
+		        <% else %>
+			<div class="article">
+			      <div class="titlePart">
+				<%= link_to page.title, page.url, {:target=>["_blank"], :style=>"text-decoration:none; color:#364a5f;"} %>
+				    </div>
+			          <div class="imgPart">
+				    <%= link_to image_tag(page.image, {:border=>"0", :alt=>"image", :size=>"220x220"}), page.url, :target=>["_blank"]%>
+				        </div>
+				  </div>
+			    <% end %>
+			    <% end %>
+			        </div>
+	  <% if count >= 5 then %>
+            <% break %>
+            <% end %>
+	  <% end %>
+	  <div class="col-sm-6 col-xs-6 col-sm-offset-3 col-xs-offset-3" style="padding:0;">
+	        <div class="detailPage">
+		  <a href="/video">続きを見る　＞</a>
+		      </div>
+		</div>
+    </div>
+</div>

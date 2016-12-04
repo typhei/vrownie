@@ -1,0 +1,30 @@
+<div class="articles">
+    <div class="container-fluid" style="padding:0; margin-top:-11px;">
+      <div class="row-fluid" style="margin:0">
+	    <% @page.each do |page| %>
+	    <div class="col-sm-12 col-xs-12" style="padding:0;">
+	          <% if !page.nil? then %>
+		  <!-- トップ記事表示部分 -->
+		  <% if page.number == @top then %>
+		      <%= link_to image_tag(page.image, {:border=>"0", :alt=>"image", :class=>"img-responsive", :width=>"100%;"}), page.url, :target=>["_blank"]%>
+		          <div class="topTitle">
+			    <span><%= page.title%></span>
+			        </div>
+			      <!-- それ以外の記事の表示 -->
+			      <% else %>
+			          <div class="article">
+				    <div class="titlePart">
+				          <spana><%= page.title%>
+					    </div>
+				    <div class="imgPart">
+				          <%= link_to image_tag(page.image, {:border=>"0", :alt=>"image", :size=>"220x220"}), page.url, :target=>["_blank"]%>
+					  </div>
+				        </div>
+				  <% end %>
+				      <% end %>
+				      </div>
+	        <% end %>
+		</div>
+    </div>
+</div>
+<%= paginate @page %>

@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   root "home#top"
   get '/top' => 'home#top'
   get '/home/top/:start' => "home#top"
+  get '/news' => 'home#news'
+  get '/home/news/:start' => "home#news"
   get '/about' => "home#about"
   get '/video' => "home#video"
   get '/inquiry' => "home#inquiry"

@@ -132,9 +132,9 @@ def pornhub():
 
         span = i.find("span", class_="title")
         link = "http://jp.pornhub.com" + span.find("a").get("href")
-        title = span.find("a").get("title")
+        title = span.find("a").get("title").replace("\n", "").replace("\"", "").encode("utf-8")
 
-        retVar.append({"title":title.replace("\n", "").replace("\"", ""), "url":link.replace("\n", ""), "image":img.replace("\n", "").encode("utf-8"), "sitename":"Pornhub"})
+        retVar.append({"title":title, "url":link, "image":img.replace("\n", "").encode("utf-8"), "sitename":"Pornhub"})
 
     return retVar
 
@@ -165,7 +165,7 @@ def main():
             continue
         
         wt.write("@video = Video.new\n")
-        wt.write("@video.title = \"" + video["title"].encode("utf-8") + "\"\n")
+        wt.write("@video.title = \"" + video["title"] + "\"\n")
         wt.write("@video.url = \"" + video["url"].encode("utf-8") + "\"\n")
         wt.write("@video.image = \"" + video["image"] + "\"\n")
         wt.write("@video.site_name = \"" + video["sitename"] + "\"\n")

@@ -1,0 +1,19 @@
+<div id="videos">
+    <div class="page">
+	<%= render 'video' %>
+    </div>
+</div>
+
+<%= javascript_include_tag 'jquery.infinitescroll' %>
+
+<script>
+ $("#videos .page").infinitescroll({
+     loading: {
+	 img:     "http://www.mytreedb.com/uploads/mytreedb/loader/ajax_loader_blue_48.gif",
+	 msgText: "loading..."
+     },
+     navSelector: "nav.pagination",
+     nextSelector: "nav.pagination a[rel=next]",
+     itemSelector: "#videos div.page" /* このDOMに差し掛かった時に、次のページのロードが始まる*/
+ });
+</script>

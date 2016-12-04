@@ -1,0 +1,31 @@
+<div class="videos">
+  <div class="container-fluid" style="padding:0; margin-top:-11px;">
+    <div class="row-fluid" style="margin:0">
+	    <% @video.each do |video| %>
+	    <div class="col-sm-12 col-xs-12" style="padding:0;">
+	          <% if !video.nil? then %>
+		  <!-- トップ記事表示部分 -->
+		  <% if video.id == @top then %>
+		      <%= link_to image_tag(video.image, {:border=>"0", :alt=>"image", :class=>"img-responsive", :width=>"100%;"}), video.url, :target=>["_blank"]%>
+		          <div class="topTitle">
+			    <span><%= video.title%></span>
+			        </div>
+			      <!-- それ以外の記事の表示 -->
+			      <% else %>
+			          <div class="article">
+				    <div class="titlePart">
+				          <span><%= video.title%></span>
+					    </div>
+				    <div class="imgPart">
+				          <%= link_to image_tag(video.image, {:border=>"0", :alt=>"image", :size=>"220x220"}), video.url, :target=>["_blank"]%>
+					  </div>
+				        </div>
+				  <% end %>
+				      <% end %>
+				      </div>
+	        <% end %>
+		</div>
+    </div>
+</div>
+</div>
+<%= paginate @video %>
